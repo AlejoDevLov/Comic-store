@@ -1,0 +1,148 @@
+.container-list{
+    width: clamp(170px,35%,350px);
+    background-color: #1E85B8;
+    position: fixed;
+    right: 0;
+    top: 70px;
+    z-index: 10;
+    max-height: 70vh;
+    overflow-y: scroll;
+    border-bottom-left-radius: 8px;
+    border-left: 2px solid black;
+    clip-path: inset( 0% 0% 100% 0%);
+    transition: clip-path .3s linear;
+}
+
+.hide-container-car-list{
+    clip-path: inset( 0% 0% 0% 0%);
+}
+
+.item-container-car{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    grid-template-rows: 3;
+    padding: 5px 0px;
+}
+
+.item-container-car:first-child{
+    padding-top: 7px;
+    height: 30vh;
+    /* background-color: aliceblue; */
+}
+
+.img-car,
+.title-car,
+.price-car,
+.subtract-icon-car,
+.units{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.img-car{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    /* background-color: aqua; */
+}
+
+.img-car img{
+    width: 80%;
+    height: 70%;
+    object-fit: contain;
+}
+
+.title-car{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    color: white;
+    /* background-color: rgb(91, 182, 152); */
+}
+
+.price-car{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    color: white;
+    /* background-color: aquamarine; */
+}
+
+.subtract-icon-car{
+    grid-column: 3/4;
+    grid-row: 1/3;
+    color: rgb(242, 102, 102);
+}
+
+.subtract-icon-car > ion-icon{
+    font-size: 25px;
+    transition: all .2s linear;
+}
+
+.subtract-icon-car > ion-icon:hover{
+    color: white;
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.417);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.units{
+    grid-column: 3/4;
+    grid-row: 2/4;
+    font-weight: bold;
+    color: rgb(238, 165, 86);
+}
+
+.go-to-pay{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5114A6;
+    color: white;
+    user-select: none;
+}
+
+.go-to-pay h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.total-car{
+    width: 100%;
+    height: 35px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid black;
+    border-left: none;
+    border-top: none;
+    border-bottom-left-radius: 8px;
+
+}
+
+.total-text-car{
+    background-color: bisque;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-bottom-left-radius: 8px;
+    border-right: 2px solid black;
+}
+
+.total-price-car{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

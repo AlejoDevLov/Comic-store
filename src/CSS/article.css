@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex&display=swap');
+
+
+.article{
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+    background-color: #ff9933;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.container-empty-results{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-empty-results h1{
+    text-align: center;
+}
+
+.card{
+    width: 25%;
+    aspect-ratio: 1/2;
+    max-width: 220px;
+    min-width: 170px;
+    /* background-color: aquamarine; */
+    margin-top: 5%;
+    /* border: 5px solid #008F8C; */
+    border-radius: 7px;
+}
+
+.card:hover {
+    background-color: rgba(233, 94, 30, 0.32);
+}
+
+.image,
+.title,
+.price,
+.cantidad,
+.button {
+    width: 100%;
+}
+
+.image{
+    height: 60%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    border-radius:7px;
+    overflow: hidden;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 7px;
+}
+
+.title{
+    height: 15%;
+    /* background-color: bisque; */
+}
+
+.title h2{
+    text-align: center;
+    font-size: 150%;
+    
+}
+
+.size-container{
+    width: 100%;
+    height: 10%;
+    /* background-color: #008F8C; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+.price{
+    height: 10%;
+    color: rgb(68, 99, 222);
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0px 5px;
+}
+
+.cantidad{
+    text-align: center;
+}
+
+.color-cantidad{
+    color: rgb(188, 5, 5);
+    font-weight: bold;
+}
+
+.button{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+.button button{
+    padding: 5px;
+    width: 60%;
+    background-color: #008F8C;
+    border-color: transparent;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.button button:hover{
+    background-color: #12b2af;
+}
+
+.disabled{
+    background-color: gray !important;
+    cursor: default !important;
+}

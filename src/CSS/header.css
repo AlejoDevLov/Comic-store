@@ -1,0 +1,292 @@
+.navbar{
+    height: 70px;
+    width: 100%;
+    background-color: #5114A6;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.filter{
+    width: 15%;
+    /* height: 100%; */
+    height: 10vw;
+    max-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter img{
+    width: 40px;
+}
+
+.search{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search input{
+    width: 90%;
+    height: 50%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1.5px solid gray;
+    padding-left: 5px;
+    font-size: 1em;
+}
+
+.search input:focus {
+    background-color: rgb(255, 241, 209);
+    outline: none;
+}
+
+.search img{
+    background-color: aliceblue;
+    padding:5px;
+    border: 1px 1px 1px 0px;
+    border-left: 0px;
+    border-color: gray;
+    border-style: solid;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.search img:hover{
+    cursor: pointer;
+    filter: invert(20%);
+}
+
+.icons{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.icons > div{
+    width: 30%;
+    height: 10vw;
+    max-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aliceblue; */
+}
+
+.icons div a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter .2s ease-out;
+}
+
+.icons div a:hover{
+    filter: invert(80%)
+}
+
+.account img:hover,
+.filter img:hover{
+    filter: invert(80%);
+    cursor: pointer;
+}
+
+.car{
+    position: relative;
+}
+
+.car-counter{
+    position: absolute;
+    width: 40%;
+    max-width: 20px;
+    aspect-ratio: 1/1;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    bottom: 10%;
+    right: 25%;
+    font-weight: bold;
+}
+
+.car img:hover{
+    filter: invert(80%);
+    cursor: pointer;
+}
+
+.hide-counter{
+    display: none;
+}
+
+.filter-container{
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    z-index: 12;
+    top: 70px;
+    background-color: rgba(6, 6, 6, 0.80);
+    /* border-bottom: 4px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: clip-path .2s linear;
+    clip-path: inset(0% 0% 100% 0%);
+}
+
+.filter-price,
+.filter-product,
+.filter-anime,
+.buttons-filter{
+    height: 100%;
+    /* background-color: aliceblue; */
+    padding: 10px 0px 0px 10px;
+    width: 25%;
+}
+
+.filter-container label,
+.filter-container select,
+.filter-container button{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.buttons-filter{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+    padding-top: 0;
+}
+
+.buttons-filter button{
+    width: 80%;
+    height: 35%;
+    /* border: 2px solid black; */
+    border-radius: 5px;
+    background-color: rgb(4, 4, 29);
+    color: white;
+    font-size: 16px;
+}
+
+.buttons-filter button:hover{
+    cursor: pointer;
+    background-color: rgb(38, 38, 39);
+}
+
+.filter-container label{
+    color: white;
+    font-size: 18px;
+}
+
+.filter-container select{
+    border-radius: 5px;
+    height: 40%;
+    /* border: 2px solid black; */
+    background-color: rgb(2, 2, 19);
+    color: white;
+}
+
+.filter-container option{
+    font-size: 15px;
+}
+
+.filter-clip{
+    clip-path: inset(0% 0% 0% 0%) !important;
+}
+
+.container-help{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    background-color: rgb(20, 20, 20);
+    color: rgb(244, 242, 242);
+    position: fixed;
+    top: 70px;
+    right: 0;
+    z-index: 15;
+    clip-path: inset(0% 0% 100% 0%);
+    transition: clip-path .2s linear;
+}
+
+.container-help h4{
+    height: 40px;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+}
+
+.container-help h4:hover{
+    background-color: gray;
+    color: black;
+}
+
+@media screen and (max-width: 600px){
+    .filter-container{
+        height: 80%;
+        width: 60%;
+        min-height: 500px;
+        max-width: 250px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 10%;
+        padding-top: 8%;
+        /* border-right: 4px solid black; */
+        /* border-bottom: 4px solid black; */
+        background-color: rgba(6, 6, 6, 0.80);
+    }
+
+    .filter-price,
+    .filter-product,
+    .filter-anime,
+    .buttons-filter{
+        /* background-color: aliceblue; */
+        width: 100%;
+        height: 10%;
+        display: block;
+        margin: 0;
+    }
+
+    .filter-container select{
+        height: 70%;
+        width: 60%;
+        font-size: 16px;
+    }
+
+    .buttons-filter{
+        gap: 10px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+    .filter-container button{
+        height: 60%;
+        font-size: 16px;
+    }
+
+    .filter-container label{
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+}

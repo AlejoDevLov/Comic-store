@@ -1,0 +1,92 @@
+
+@font-face {
+  font-family: 'comic';
+  src: url(../../fonts/Action\ Comics.ttf);
+}
+
+body{
+  background-color: black;
+  user-select: none;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.455)), url(/src/images/fondo/Fondo\ pagina\ copia.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  animation-name: animationHome ;
+  animation-duration: .4s;
+  animation-timing-function: linear;
+}
+
+.title-div{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  /* background-color: black; */
+}
+
+.store-name{
+  font-size: clamp(2rem, 150%, 3rem);
+  display: block;
+  font-family: comic;
+  background: linear-gradient(to right, blue, purple, orange, red);
+  -webkit-text-fill-color: rgb(244, 239, 239);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -moz-background-clip: text;
+  text-shadow: 0px 10px 10px rgba(233, 101, 40, 0.952), 10px 0px 10px rgba(188, 40, 233, 0.952), 0px -10px 10px rgba(40, 53, 233, 0.952), -10px 0px 10px rgba(233, 40, 75, 0.952);
+}
+
+.swiper {
+  width: 90%;
+  margin: 40vh auto ;
+  padding: 30px;
+  border-radius: 5px;
+  /* background-color: aliceblue; */
+}
+
+.swiper-slide {
+  width: 30%;
+  aspect-ratio: 1/1;
+  max-width: 400px;
+  min-width: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+}
+
+.swiper-slide a{
+  display: flex;
+  width: 100%;
+  /* cursor: grab; */
+}
+
+.swiper-slide img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and ( min-width: 900px ){
+    .store-name{
+      font-size: 250%;
+    }
+}
+
+@keyframes animationHome{
+  from {
+    clip-path: circle( 0% at 0% 0%);
+  }
+
+  to {
+    clip-path: circle( 100% at 0% 0%);
+  }
+}
