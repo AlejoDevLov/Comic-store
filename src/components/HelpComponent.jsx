@@ -1,6 +1,7 @@
 
 export const HelpComponent = ({ helpIcon, classIcon }) => {
 
+    
   return (
     <>
         <div className={classIcon} ref={helpIcon}>

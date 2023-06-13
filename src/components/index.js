@@ -7,3 +7,4 @@ export * from './Article';
 export * from './FilterMenu';
 export * from './SizeTShirt';
 export * from './HelpComponent';
+export * from './IconsNavbar';

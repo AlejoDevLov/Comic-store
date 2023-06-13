@@ -62,7 +62,7 @@ export const allAnimes = [
     {
         id: 6,
         name: 'Figura Zenitsu',
-        descripcion: 'Figura hecha en resina e alta calidad, con pintura artistica. Producto importado',
+        descripcion: 'Figura hecha en resina de alta calidad, con pintura artistica. Producto importado',
         keyWords: ['resina', 'muñeco', 'figura', 'demon slayer', 'demon', 'kimetsu no yaiba', 'zenitsu', 'senitsu', 'zenitzu'],
         precio: '$170.000',
         anime: 'demon slayer',
@@ -72,7 +72,7 @@ export const allAnimes = [
     {
         id: 7,
         name: 'Figura Tanjiro',
-        descripcion: 'Figura hecha en resina e alta calidad, con pintura artistica. Producto importado',
+        descripcion: 'Figura hecha en resina de alta calidad, con pintura artistica. Producto importado',
         keyWords: ['resina', 'muñeco', 'figura', 'demon slayer', 'demon', 'kimetsu no yaiba', 'tanjiro', 'kamado'],
         precio: '$170.000',
         anime: 'demon slayer',
@@ -82,7 +82,7 @@ export const allAnimes = [
     {
         id: 8,
         name: 'Figura Inozuke',
-        descripcion: 'Figura hecha en resina e alta calidad, con pintura artistica. Producto importado',
+        descripcion: 'Figura hecha en resina de alta calidad, con pintura artistica. Producto importado',
         keyWords: ['resina', 'muñeco', 'figura', 'demon slayer', 'demon', 'kimetsu no yaiba', 'inozque', 'inozke', 'inozuke'],
         precio: '$170.000',
         anime: 'demon slayer',
@@ -92,7 +92,7 @@ export const allAnimes = [
     {
         id: 9,
         name: 'Figura Nezuko',
-        descripcion: 'Figura hecha en resina e alta calidad, con pintura artistica. Producto importado',
+        descripcion: 'Figura hecha en resina de alta calidad, con pintura artistica. Producto importado',
         keyWords: ['resina', 'muñeco', 'figura', 'demon slayer', 'demon', 'kimetsu no yaiba', 'nesuko', 'nezuko'],
         precio: '$160.000',
         anime: 'demon slayer',
@@ -102,7 +102,7 @@ export const allAnimes = [
     {
         id: 10,
         name: 'Figura Tomioka',
-        descripcion: 'Figura hecha en resina e alta calidad, con pintura artistica. Producto importado',
+        descripcion: 'Figura hecha en resina de alta calidad, con pintura artistica. Producto importado',
         keyWords: ['resina', 'muñeco', 'figura', 'demon slayer', 'demon', 'kimetsu no yaiba', 'tomioka', 'tomioca'],
         precio: '$150.000',
         anime: 'demon slayer',
@@ -327,7 +327,7 @@ export const allAnimes = [
     {
         id: 6,
         name: 'Figura Black Goku',
-        descripcion: 'Figura hecha en resina e alta calidad, con pintura artistica. Producto importado',
+        descripcion: 'Figura hecha en resina de alta calidad, con pintura artistica. Producto importado',
         keyWords: ['resina', 'muñeco', 'figura', 'dragon ball', 'black goku', 'rose'],
         precio: '$140.000',
         anime: 'Dragon ball',
@@ -337,7 +337,7 @@ export const allAnimes = [
     {
         id: 7,
         name: 'Figura Kid Boo',
-        descripcion: 'Figura hecha en resina e alta calidad, con pintura artistica. Producto importado',
+        descripcion: 'Figura hecha en resina de alta calidad, con pintura artistica. Producto importado',
         keyWords: ['resina', 'muñeco', 'figura', 'dragon ball','majin', 'majin bu', 'majin boo', 'boo', 'kid boo'],
         precio: '$150.000',
         anime: 'Dragon ball',
@@ -347,7 +347,7 @@ export const allAnimes = [
     {
         id: 8,
         name: 'Figura Broly',
-        descripcion: 'Figura hecha en resina e alta calidad, con pintura artistica. Producto importado',
+        descripcion: 'Figura hecha en resina de alta calidad, con pintura artistica. Producto importado',
         keyWords: ['resina', 'muñeco', 'figura', 'dragon ball', 'broly'],
         precio: '$160.000',
         anime: 'Dragon ball',
@@ -357,7 +357,7 @@ export const allAnimes = [
     {
         id: 9,
         name: 'Figura Vegeta',
-        descripcion: 'Figura hecha en resina e alta calidad, con pintura artistica. Producto importado',
+        descripcion: 'Figura hecha en resina de alta calidad, con pintura artistica. Producto importado',
         keyWords: ['resina', 'muñeco', 'figura', 'dragon ball', 'vegeta', 'blue', 'super sayayin blue'],
         precio: '$140.000',
         anime: 'Dragon ball',
@@ -367,7 +367,7 @@ export const allAnimes = [
     {
         id: 10,
         name: 'Figura Shen Long',
-        descripcion: 'Figura hecha en resina e alta calidad, con pintura artistica. Producto importado',
+        descripcion: 'Figura hecha en resina de alta calidad, con pintura artistica. Producto importado',
         keyWords: ['resina', 'muñeco', 'figura', 'dragon ball', 'goku', 'shenlong', 'dragon'],
         precio: '$160.000',
         anime: 'Dragon ball',
@@ -532,6 +532,7 @@ export const allAnimes = [
     {
         id: 1,
         name: 'Camiseta Homero Drink',
+        descripcion: 'Camiseta  hecha en Algodon 80% y Poliéster 20%. Con acabados de alta calidad. Producto 100% Colombiano. Todas nuestras camisetas cuentan con 6 meses de garantía.',
         keyWords: ['los simpson','camiseta', 'simpsons', 'homero'],
         talla: ['S', 'M', 'L', 'XL'],
         precio: '$50.000',
@@ -543,6 +544,7 @@ export const allAnimes = [
     {
         id: 2,
         name: 'Camiseta Homero Marge',
+        descripcion: 'Camiseta  hecha en Algodon 80% y Poliéster 20%. Con acabados de alta calidad. Producto 100% Colombiano. Todas nuestras camisetas cuentan con 6 meses de garantía.',
         keyWords: ['los simpson','camiseta', 'simpsons', 'homero', 'marge'],
         talla: ['S', 'L', 'XL'],
         precio: '$50.000',
@@ -554,6 +556,7 @@ export const allAnimes = [
     {
         id: 3,
         name: 'Camiseta Homero Donut',
+        descripcion: 'Camiseta  hecha en Algodon 80% y Poliéster 20%. Con acabados de alta calidad. Producto 100% Colombiano. Todas nuestras camisetas cuentan con 6 meses de garantía.',
         keyWords: ['los simpson','camiseta', 'simpsons', 'homero'],
         talla: ['S', 'M', 'XL'],
         precio: '$50.000',
@@ -565,6 +568,7 @@ export const allAnimes = [
     {
         id: 4,
         name: 'Camiseta Homero in love',
+        descripcion: 'Camiseta  hecha en Algodon 80% y Poliéster 20%. Con acabados de alta calidad. Producto 100% Colombiano. Todas nuestras camisetas cuentan con 6 meses de garantía.',
         keyWords: ['los simpson','camiseta', 'simpsons', 'homero'],
         talla: ['S', 'M', 'L'],
         precio: '$50.000',
@@ -576,6 +580,7 @@ export const allAnimes = [
     {
         id: 5,
         name: 'Camiseta Homero Duff',
+        descripcion: 'Camiseta  hecha en Algodon 80% y Poliéster 20%. Con acabados de alta calidad. Producto 100% Colombiano. Todas nuestras camisetas cuentan con 6 meses de garantía.',
         keyWords: ['los simpson','camiseta', 'simpsons', 'homero'],
         talla: ['S', 'XL'],
         precio: '$50.000',
@@ -587,6 +592,7 @@ export const allAnimes = [
     {
         id: 6,
         name: 'Figura Flanders devil',
+        descripcion: 'Figura polipropileno de alta densidad. Producto importado',
         keyWords: ['los simpson','figura', 'resina', 'muñeco', 'simpsons', 'flanders', 'ned'],
         precio: '$30.000',
         anime: 'los Simpson',
@@ -596,6 +602,7 @@ export const allAnimes = [
     {
         id: 7,
         name: 'Figura Lisa',
+        descripcion: 'Figura polipropileno de alta densidad. Producto importado',
         keyWords: ['los simpson','figura', 'resina', 'muñeco', 'simpsons', 'lisa'],
         precio: '$30.000',
         anime: 'los Simpson',
@@ -605,6 +612,7 @@ export const allAnimes = [
     {
         id: 8,
         name: 'Figura Homero',
+        descripcion: 'Figura polipropileno de alta densidad. Producto importado',
         keyWords: ['los simpson','figura', 'resina', 'muñeco', 'simpsons', 'homero'],
         precio: '$30.000',
         anime: 'los Simpson',
@@ -614,6 +622,7 @@ export const allAnimes = [
     {
         id: 9,
         name: 'Figura Maggie',
+        descripcion: 'Figura polipropileno de alta densidad. Producto importado',
         keyWords: ['los simpson','figura', 'resina', 'muñeco', 'simpsons', 'maggie', 'magui', 'magi'],
         precio: '$30.000',
         anime: 'los Simpson',
@@ -623,6 +632,7 @@ export const allAnimes = [
     {
         id: 10,
         name: 'Figura Bart',
+        descripcion: 'Figura polipropileno de alta densidad. Producto importado',
         keyWords: ['los simpson','figura', 'resina', 'muñeco', 'simpsons', 'bart'],
         precio: '$30.000',
         anime: 'los Simpson',
@@ -632,6 +642,7 @@ export const allAnimes = [
     {
         id: 11,
         name: 'Llavero Homero',
+        descripcion: 'Producto importado, fabricados en polimeros y la cadenilla en acero inoxidable.',
         keyWords: ['los simpson','llavero', 'simpsons', 'homero'],
         precio: '$10.000',
         anime: 'los Simpson',
@@ -641,6 +652,7 @@ export const allAnimes = [
     {
         id: 12,
         name: 'Llavero Bart',
+        descripcion: 'Producto importado, fabricados en polimeros y la cadenilla en acero inoxidable.',
         keyWords: ['los simpson','llavero', 'simpsons', 'bart'],
         precio: '$10.000',
         anime: 'los Simpson',
@@ -650,6 +662,7 @@ export const allAnimes = [
     {
         id: 13,
         name: 'Llavero Cerveza Duff',
+        descripcion: 'Producto importado, fabricados en polimeros y la cadenilla en acero inoxidable.',
         keyWords: ['los simpson','llavero', 'simpsons', 'duff', 'cerveza'],
         precio: '$10.000',
         anime: 'los Simpson',
@@ -659,6 +672,7 @@ export const allAnimes = [
     {
         id: 14,
         name: 'Llavero Dona',
+        descripcion: 'Producto importado, fabricado en polipropileno y la cadenilla en acero inoxidable.',
         keyWords: ['los simpson','llavero', 'simpsons', 'dona', 'donut'],
         precio: '$30.000',
         anime: 'los Simpson',
@@ -668,6 +682,7 @@ export const allAnimes = [
     {
         id: 15,
         name: 'Llavero Familia Simpson',
+        descripcion: 'Producto importado, fabricados en polipropileno y la cadenilla en acero inoxidable.',
         keyWords: ['los simpson','llavero', 'simpsons', 'homero', 'bart', 'marge', 'lisa'],
         precio: '$25.000',
         anime: 'los Simpson',
@@ -677,6 +692,7 @@ export const allAnimes = [
     {
         id: 16,
         name: 'Case Homero',
+        descripcion: 'Nuestros cases son fabricados y adapatados para casi cualquier referencia de celular. Con diseños propios o tambien personalizables a tu gusto.',
         keyWords: ['los simpson','case', 'estuche', 'simpsons', 'homero'],
         precio: '$35.000',
         anime: 'los Simpson',
@@ -687,6 +703,7 @@ export const allAnimes = [
     {
         id: 17,
         name: 'Case Homero',
+        descripcion: 'Nuestros cases son fabricados y adapatados para casi cualquier referencia de celular. Con diseños propios o tambien personalizables a tu gusto.',
         keyWords: ['los simpson','case', 'estuche', 'simpsons', 'homero'],
         precio: '$35.000',
         anime: 'los Simpson',
@@ -697,6 +714,7 @@ export const allAnimes = [
     {
         id: 18,
         name: 'Case Homero & Marge',
+        descripcion: 'Nuestros cases son fabricados y adapatados para casi cualquier referencia de celular. Con diseños propios o tambien personalizables a tu gusto.',
         keyWords: ['los simpson','case', 'estuche', 'simpsons', 'homero', 'marge'],
         precio: '$35.000',
         anime: 'los Simpson',
@@ -707,6 +725,7 @@ export const allAnimes = [
     {
         id: 19,
         name: 'Case Bart , Maggie, Lisa',
+        descripcion: 'Nuestros cases son fabricados y adapatados para casi cualquier referencia de celular. Con diseños propios o tambien personalizables a tu gusto.',
         keyWords: ['los simpson','case', 'estuche', 'simpsons', 'bart', 'lisa', 'maggie'],
         precio: '$35.000',
         anime: 'los Simpson',
@@ -717,6 +736,7 @@ export const allAnimes = [
     {
         id: 20,
         name: 'Case Familia Simpson',
+        descripcion: 'Nuestros cases son fabricados y adapatados para casi cualquier referencia de celular. Con diseños propios o tambien personalizables a tu gusto.',
         keyWords: ['los simpson','case', 'estuche', 'simpsons', 'homero', 'bart', 'lisa', 'marge', 'maggie'],
         precio: '$35.000',
         anime: 'los Simpson',
@@ -727,6 +747,7 @@ export const allAnimes = [
     {
         id: 21,
         name: 'Vaso Bart',
+        descripcion: 'Vasos fabricados en polietileno. Vienen con tapa para hermetizar y evitar derrames de liquido. Perfectos para bebidas frias.',
         keyWords: ['los simpson','vaso', 'simpsons', 'bart'],
         precio: '$25.000',
         anime: 'los Simpson',
@@ -736,6 +757,7 @@ export const allAnimes = [
     {
         id: 22,
         name: 'Vaso Homero',
+        descripcion: 'Vasos fabricados ceramica. Perfectos para bebidas frias y calientes. En especial para cerveza.',
         keyWords: ['los simpson','vaso', 'simpsons', 'Homero'],
         precio: '$35.000',
         anime: 'los Simpson',
@@ -745,6 +767,7 @@ export const allAnimes = [
     {
         id: 23,
         name: 'Vaso Moe & Barnie',
+        descripcion: 'Vasos fabricados en polietileno. Vienen con tapa para hermetizar y evitar derrames de liquido. Perfectos para bebidas frias.',
         keyWords: ['los simpson','vaso', 'simpsons', 'moe', 'barnie'],
         precio: '$25.000',
         anime: 'los Simpson',
@@ -754,6 +777,7 @@ export const allAnimes = [
     {
         id: 24,
         name: 'Vaso Homero',
+        descripcion: 'Vasos fabricados en polietileno. Vienen con tapa para hermetizar y evitar derrames de liquido. Perfectos para bebidas frias.',
         keyWords: ['los simpson','vaso', 'simpsons', 'Homero'],
         precio: '$25.000',
         anime: 'los Simpson',
@@ -763,6 +787,7 @@ export const allAnimes = [
     {
         id: 25,
         name: 'Vaso Homero Buda',
+        descripcion: 'Vasos fabricados en polietileno. Vienen con tapa para hermetizar y evitar derrames de liquido. Perfectos para bebidas frias.',
         keyWords: ['los simpson','vaso', 'simpsons', 'Homero'],
         precio: '$25.000',
         anime: 'los Simpson',
@@ -772,6 +797,7 @@ export const allAnimes = [
     {
         id: 1,
         name: 'Camiseta Mario & Luigi',
+        descripcion: 'Camiseta  hecha en Algodon 80% y Poliéster 20%. Con acabados de alta calidad. Producto 100% Colombiano. Todas nuestras camisetas cuentan con 6 meses de garantía.',
         keyWords: ['camiseta', 'mario', 'luigi'],
         talla: [ 'S', 'M', 'L'],
         precio: '$50.000',
@@ -782,8 +808,9 @@ export const allAnimes = [
     },
     {
         id: 2,
-        name: 'Buso Mario & Luigi',
-        keyWords: ['camiseta', 'buso', 'saco', 'mario', 'luigi'],
+        name: 'Camibuso Mario & Luigi',
+        descripcion: 'Camibuso  hecho en Algodon 100%. Con acabados de alta calidad. Producto 100% Colombiano. Todas nuestras camisetas cuentan con 6 meses de garantía.',
+        keyWords: ['camiseta', 'buso', 'saco','camibuso', 'mario', 'luigi'],
         talla: [ 'S', 'M', 'L', 'XL'],
         precio: '$80.000',
         colores: [ 'Negro', 'Azul', 'Verde' ],
@@ -794,6 +821,7 @@ export const allAnimes = [
     {
         id: 3,
         name: 'Camiseta Mario & Donkey kong',
+        descripcion: 'Camiseta  hecha en Algodon 80% y Poliéster 20%. Con acabados de alta calidad. Producto 100% Colombiano. Todas nuestras camisetas cuentan con 6 meses de garantía.',
         keyWords: ['camiseta', 'mario', 'luigi', 'kong', 'jhoshi', 'yoshi'],
         talla: [ 'S', 'M'],
         precio: '$50.000',
@@ -805,6 +833,7 @@ export const allAnimes = [
     {
         id: 4,
         name: 'Buso Mario & Pokemon',
+        descripcion: 'Camiseta  hecha en Algodon 100%.Con acabados de alta calidad. Producto 100% Colombiano. Todas nuestras camisetas cuentan con 6 meses de garantía.',
         keyWords: ['camiseta', 'buso', 'saco', 'mario', 'pokemon', 'peaches'],
         talla: [ 'S', 'L'],
         precio: '$90.000',
@@ -816,6 +845,7 @@ export const allAnimes = [
     {
         id: 5,
         name: 'Buso Varios',
+        descripcion: 'Camiseta  hecha en Algodon 100%.Con acabados de alta calidad. Producto 100% Colombiano. Todas nuestras camisetas cuentan con 6 meses de garantía.',
         keyWords: ['camiseta', 'buso', 'saco', 'mario', 'pokemon', 'peaches', 'zelda', 'megaman', 'sonic'],
         talla: [ 'S', 'M', 'L'],
         precio: '$100.000',
@@ -827,6 +857,7 @@ export const allAnimes = [
     {
         id: 6,
         name: 'Figura Bowser',
+        descripcion: 'Figura hecha en resina de alta calidad, con pintura artistica. Producto importado',
         keyWords: ['resina', 'muñeco', 'figura', 'mario', 'bowser', 'tortuga', 'dragon'],
         precio: '$80.000',
         anime: 'Mario',
@@ -836,6 +867,7 @@ export const allAnimes = [
     {
         id: 7,
         name: 'Figura Luigi',
+        descripcion: 'Figura hecha en resina de alta calidad, con pintura artistica. Producto importado',
         keyWords: ['resina', 'muñeco', 'figura', 'mario', 'luigi'],
         precio: '$80.000',
         anime: 'Mario',
@@ -845,6 +877,7 @@ export const allAnimes = [
     {
         id: 8,
         name: 'Figura Toad (honguito)',
+        descripcion: 'Figura hecha en resina de alta calidad, con pintura artistica. Producto importado',
         keyWords: ['resina', 'muñeco', 'figura', 'mario', 'toad', 'honguito'],
         precio: '$90.000',
         anime: 'Mario',
@@ -854,6 +887,7 @@ export const allAnimes = [
     {
         id: 9,
         name: 'Figura Princesa Peach',
+        descripcion: 'Figura hecha en resina de alta calidad, con pintura artistica. Producto importado',
         keyWords: ['resina', 'muñeco', 'figura', 'mario', 'peach', 'princesa'],
         precio: '$90.000',
         anime: 'Mario',
@@ -863,6 +897,7 @@ export const allAnimes = [
     {
         id: 10,
         name: 'Figura Mario',
+        descripcion: 'Figura hecha en resina de alta calidad, con pintura artistica. Producto importado',
         keyWords: ['resina', 'muñeco', 'figura', 'mario'],
         precio: '$100.000',
         anime: 'Mario',
@@ -872,6 +907,7 @@ export const allAnimes = [
     {
         id: 11,
         name: 'Llavero Mario & Luigi',
+        descripcion: 'Producto importado, fabricado en polipropileno y la cadenilla en acero inoxidable.',
         keyWords: ['llavero', 'mario', 'luigi'],
         precio: '$30.000',
         anime: 'Mario',
@@ -881,6 +917,7 @@ export const allAnimes = [
     {
         id: 12,
         name: 'Llavero Mario',
+        descripcion: 'Producto importado, fabricado en polipropileno y la cadenilla en acero inoxidable.',
         keyWords: ['llavero', 'mario'],
         precio: '$20.000',
         anime: 'Mario',
@@ -890,6 +927,7 @@ export const allAnimes = [
     {
         id: 13,
         name: 'Llavero Bowser',
+        descripcion: 'Producto importado, fabricado en polipropileno y la cadenilla en acero inoxidable.',
         keyWords: ['llavero', 'mario', 'bowser', 'tortuga', 'dragon'],
         precio: '$15.000',
         anime: 'Mario',
@@ -899,6 +937,7 @@ export const allAnimes = [
     {
         id: 14,
         name: 'Llavero Tortuga',
+        descripcion: 'Producto importado, fabricado en polipropileno y la cadenilla en acero inoxidable.',
         keyWords: ['llavero', 'mario', 'tortuga', 'dragon'],
         precio: '$25.000',
         anime: 'Mario',
@@ -908,6 +947,7 @@ export const allAnimes = [
     {
         id: 15,
         name: 'Llavero Luigi',
+        descripcion: 'Producto importado, fabricado en polipropileno y la cadenilla en acero inoxidable.',
         keyWords: ['llavero', 'mario', 'luigi'],
         precio: '$20.000',
         anime: 'Mario',
@@ -917,6 +957,7 @@ export const allAnimes = [
     {
         id: 16,
         name: 'Case Super Mario Bros',
+        descripcion: 'Nuestros cases son fabricados y adapatados para casi cualquier referencia de celular. Con diseños propios o tambien personalizables a tu gusto.',
         keyWords: ['case', 'estuche', 'mario', 'nintendo'],
         precio: '$35.000',
         anime: 'Mario',
@@ -927,6 +968,7 @@ export const allAnimes = [
     {
         id: 17,
         name: 'Case Mario',
+        descripcion: 'Nuestros cases son fabricados y adapatados para casi cualquier referencia de celular. Con diseños propios o tambien personalizables a tu gusto.',
         keyWords: ['case', 'estuche', 'mario'],
         precio: '$35.000',
         anime: 'Mario',
@@ -937,6 +979,7 @@ export const allAnimes = [
     {
         id: 18,
         name: 'Case Luigi',
+        descripcion: 'Nuestros cases son fabricados y adapatados para casi cualquier referencia de celular. Con diseños propios o tambien personalizables a tu gusto.',
         keyWords: ['case', 'estuche', 'mario', 'luigi'],
         precio: '$35.000',
         anime: 'Mario',
@@ -947,6 +990,7 @@ export const allAnimes = [
     {
         id: 19,
         name: 'Case Mario',
+        descripcion: 'Nuestros cases son fabricados y adapatados para casi cualquier referencia de celular. Con diseños propios o tambien personalizables a tu gusto.',
         keyWords: ['case', 'estuche', 'mario'],
         precio: '$35.000',
         anime: 'Mario',
@@ -957,6 +1001,7 @@ export const allAnimes = [
     {
         id: 20,
         name: 'Case Mario World',
+        descripcion: 'Nuestros cases son fabricados y adapatados para casi cualquier referencia de celular. Con diseños propios o tambien personalizables a tu gusto.',
         keyWords: ['case', 'estuche', 'mario', 'luigi'],
         precio: '$35.000',
         anime: 'Mario',
@@ -967,6 +1012,7 @@ export const allAnimes = [
     {
         id: 21,
         name: 'Vaso Bowser',
+        descripcion: 'Vasos fabricados en ceramica con pintura acrilica. Perfectos para bebidas frias y calientes.',
         keyWords: ['vaso', 'mario', 'bowser', 'tortuga', 'dragon'],
         precio: '$25.000',
         anime: 'Mario',
@@ -976,6 +1022,7 @@ export const allAnimes = [
     {
         id: 22,
         name: 'Vaso Luigi',
+        descripcion: 'Vasos fabricados en polietileno. Vienen con tapa para hermetizar y evitar derrames de liquido. Perfectos para bebidas frias.',
         keyWords: ['vaso', 'mario', 'luigi'],
         precio: '$20.000',
         anime: 'Mario',
@@ -985,6 +1032,7 @@ export const allAnimes = [
     {
         id: 23,
         name: 'Vaso Mario Game',
+        descripcion: 'Vasos fabricados en ceramica con pintura acrilica. Perfectos para bebidas frias y calientes.',
         keyWords: ['vaso', 'mario', 'luigi'],
         precio: '$40.000',
         anime: 'Mario',
@@ -994,6 +1042,7 @@ export const allAnimes = [
     {
         id: 24,
         name: 'Vaso Mario',
+        descripcion: 'Vasos fabricados en ceramica con pintura acrilica. Perfectos para bebidas frias y calientes.',
         keyWords: ['vaso', 'mario'],
         precio: '$20.000',
         anime: 'Mario',
@@ -1003,6 +1052,7 @@ export const allAnimes = [
     {
         id: 25,
         name: 'Vaso Mario & Luigi',
+        descripcion: 'Vasos fabricados en ceramica con pintura acrilica. Perfectos para bebidas frias y calientes.',
         keyWords: ['vaso', 'mario', 'luigi'],
         precio: '$25.000',
         anime: 'Mario',
@@ -1012,6 +1062,7 @@ export const allAnimes = [
     {
         id: 1,
         name: 'Camiseta 7 Pecados',
+        descripcion: 'Camiseta  hecha en Algodon 80% y Poliéster 20%. Con acabados de alta calidad. Producto 100% Colombiano. Todas nuestras camisetas cuentan con 6 meses de garantía.',
         keyWords: ['nanatsu no taizai','camiseta', 'seven deadly', 'siete pecados', 'ban', 'diana', 'meliodas','king', 'gowther','elizabeth'],
         talla: ['XS', 'S', 'M', 'L'],
         precio: '$50.000',
@@ -1023,6 +1074,7 @@ export const allAnimes = [
     {
         id: 2,
         name: 'Camiseta 7 Pecados',
+        descripcion: 'Camiseta  hecha en Algodon 80% y Poliéster 20%. Con acabados de alta calidad. Producto 100% Colombiano. Todas nuestras camisetas cuentan con 6 meses de garantía.',
         keyWords: ['nanatsu no taizai','camiseta', 'seven deadly', 'siete pecados', 'ban', 'diana', 'meliodas','king', 'gowther','elizabeth'],
         talla: ['XS', 'L', 'XL'],
         precio: '$50.000',
@@ -1034,6 +1086,7 @@ export const allAnimes = [
     {
         id: 3,
         name: 'Buso Ban',
+        descripcion: 'Buso hecho en Algodon 100%.Con acabados de alta calidad. Producto 100% Colombiano.',
         keyWords: ['nanatsu no taizai','camiseta', 'buso', 'saco', 'sudadera', 'seven deadly', 'siete pecados', 'ban', 'el zorro'],
         talla: ['M', 'L'],
         precio: '$110.000',
@@ -1045,6 +1098,7 @@ export const allAnimes = [
     {
         id: 4,
         name: 'Camiseta Ban el zorro',
+        descripcion: 'Camiseta  hecha en Algodon 100%.Con acabados de alta calidad. Producto 100% Colombiano. Todas nuestras camisetas cuentan con 6 meses de garantía.',
         keyWords: ['nanatsu no taizai','camiseta', 'seven deadly', 'siete pecados', 'ban', 'el zorro'],
         talla: ['XS', 'S', 'L'],
         precio: '$50.000',
@@ -1056,6 +1110,7 @@ export const allAnimes = [
     {
         id: 5,
         name: 'Camibuso Meliodas',
+        descripcion: 'Camibuso  hecho en Algodon 100%.Con acabados de alta calidad. Producto 100% Colombiano. Todas nuestras camisetas cuentan con 6 meses de garantía.',
         keyWords: ['nanatsu no taizai','camiseta', 'buso', 'saco', 'sudadera', 'seven deadly', 'siete pecados', 'meliodas'],
         talla: ['M', 'L'],
         precio: '$70.000',
@@ -1067,6 +1122,7 @@ export const allAnimes = [
     {
         id: 6,
         name: 'Figura Meliodas',
+        descripcion: 'Figura hecha en resina de alta calidad, con pintura artistica. Producto importado',
         keyWords: ['nanatsu no taizai','figura', 'resina', 'muñeco', 'seven deadly', 'siete pecados', 'meliodas'],
         precio: '$130.000',
         anime: 'seven deadly',
@@ -1076,6 +1132,7 @@ export const allAnimes = [
     {
         id: 7,
         name: 'Figura Ban vs King',
+        descripcion: 'Figura hecha en resina de alta calidad, con pintura artistica. Producto importado',
         keyWords: ['nanatsu no taizai','figura', 'resina', 'muñeco', 'seven deadly', 'siete pecados', 'ban', 'king'],
         precio: '$150.000',
         anime: 'seven deadly',
@@ -1085,6 +1142,7 @@ export const allAnimes = [
     {
         id: 8,
         name: 'Figura Elizabeth',
+        descripcion: 'Figura hecha en resina de alta calidad, con pintura artistica. Producto importado',
         keyWords: ['nanatsu no taizai','figura', 'resina', 'muñeco', 'seven deadly', 'siete pecados', 'elizabeth'],
         precio: '$110.000',
         anime: 'seven deadly',
@@ -1094,6 +1152,7 @@ export const allAnimes = [
     {
         id: 9,
         name: 'Figura Ban',
+        descripcion: 'Figura hecha en resina de alta calidad, con pintura artistica. Producto importado',
         keyWords: ['nanatsu no taizai','figura', 'resina', 'muñeco', 'seven deadly', 'siete pecados', 'ban'],
         precio: '$130.000',
         anime: 'seven deadly',
@@ -1103,6 +1162,7 @@ export const allAnimes = [
     {
         id: 10,
         name: 'Figura king',
+        descripcion: 'Figura hecha en resina de alta calidad, con pintura artistica. Producto importado',
         keyWords: ['nanatsu no taizai','figura', 'resina', 'muñeco', 'seven deadly', 'siete pecados', 'king', 'rey hada'],
         precio: '$130.000',
         anime: 'seven deadly',
@@ -1112,6 +1172,7 @@ export const allAnimes = [
     {
         id: 11,
         name: 'Tesoro sagrado Escanor',
+        descripcion: 'Producto importado, fabricado en acero y polietileno y la cadenilla en acero inoxidable.',
         keyWords: ['nanatsu no taizai','llavero', 'seven deadly', 'siete pecados', 'escanor', 'tesoro sagrado'],
         precio: '$25.000',
         anime: 'seven deadly',
@@ -1121,6 +1182,7 @@ export const allAnimes = [
     {
         id: 12,
         name: 'Tesoro sagrado Diana',
+        descripcion: 'Producto importado, fabricado en acero y polietileno y la cadenilla en acero inoxidable.',
         keyWords: ['nanatsu no taizai','llavero', 'seven deadly', 'siete pecados', 'diana', 'tesoro sagrado'],
         precio: '$25.000',
         anime: 'seven deadly',
@@ -1130,6 +1192,7 @@ export const allAnimes = [
     {
         id: 13,
         name: 'Tesoro sagrado King',
+        descripcion: 'Producto importado, fabricado en acero y polietileno y la cadenilla en acero inoxidable.',
         keyWords: ['nanatsu no taizai','llavero', 'seven deadly', 'siete pecados', 'king', 'tesoro sagrado'],
         precio: '$25.000',
         anime: 'seven deadly',
@@ -1139,6 +1202,7 @@ export const allAnimes = [
     {
         id: 14,
         name: 'Tesoro sagrado Meliodas',
+        descripcion: 'Producto importado, fabricado en acero y polietileno y la cadenilla en acero inoxidable.',
         keyWords: ['nanatsu no taizai','llavero', 'seven deadly', 'siete pecados', 'meliodas', 'tesoro sagrado'],
         precio: '$25.000',
         anime: 'seven deadly',
@@ -1148,6 +1212,7 @@ export const allAnimes = [
     {
         id: 15,
         name: 'Llavero daga Meliodas',
+        descripcion: 'Producto importado, fabricado en acero y polietileno y la cadenilla en acero inoxidable.',
         keyWords: ['nanatsu no taizai','llavero', 'seven deadly', 'siete pecados', 'meliodas', 'tesoro sagrado'],
         precio: '$25.000',
         anime: 'seven deadly',
@@ -1157,6 +1222,7 @@ export const allAnimes = [
     {
         id: 16,
         name: 'Case Meliodas',
+        descripcion: 'Nuestros cases son fabricados y adapatados para casi cualquier referencia de celular. Con diseños propios o tambien personalizables a tu gusto.',
         keyWords: ['nanatsu no taizai','case', 'estuche', 'seven deadly', 'siete pecados', 'meliodas'],
         precio: '$35.000',
         anime: 'seven deadly',
@@ -1167,6 +1233,7 @@ export const allAnimes = [
     {
         id: 17,
         name: 'Case Meliodas',
+        descripcion: 'Nuestros cases son fabricados y adapatados para casi cualquier referencia de celular. Con diseños propios o tambien personalizables a tu gusto.',
         keyWords: ['nanatsu no taizai','case', 'estuche', 'seven deadly', 'siete pecados', 'meliodas'],
         precio: '$35.000',
         anime: 'seven deadly',
@@ -1177,6 +1244,7 @@ export const allAnimes = [
     {
         id: 18,
         name: 'Case 7 Pecados',
+        descripcion: 'Nuestros cases son fabricados y adapatados para casi cualquier referencia de celular. Con diseños propios o tambien personalizables a tu gusto.',
         keyWords: ['nanatsu no taizai','case', 'estuche', 'seven deadly', 'siete pecados', 'meliodas', 'ban', 'king', 'elizabeth', 'diana', 'gowther', 'merlin'],
         precio: '$35.000',
         anime: 'seven deadly',
@@ -1187,6 +1255,7 @@ export const allAnimes = [
     {
         id: 19,
         name: 'Case Ban',
+        descripcion: 'Nuestros cases son fabricados y adapatados para casi cualquier referencia de celular. Con diseños propios o tambien personalizables a tu gusto.',
         keyWords: ['nanatsu no taizai','case', 'estuche', 'seven deadly', 'siete pecados', 'ban'],
         precio: '$35.000',
         anime: 'seven deadly',
@@ -1197,6 +1266,7 @@ export const allAnimes = [
     {
         id: 20,
         name: 'Case 7 pecados',
+        descripcion: 'Nuestros cases son fabricados y adapatados para casi cualquier referencia de celular. Con diseños propios o tambien personalizables a tu gusto.',
         keyWords: ['nanatsu no taizai','case', 'estuche', 'seven deadly', 'siete pecados', 'meliodas', 'ban', 'king', 'elizabeth', 'diana', 'gowther', 'merlin'],
         precio: '$35.000',
         anime: 'seven deadly',
@@ -1207,6 +1277,7 @@ export const allAnimes = [
     {
         id: 21,
         name: 'Vaso Escanor',
+        descripcion: 'Vasos fabricados en acero inoxidable. Vienen con tapa para hermetizar y evitar derrames de liquido. Perfectos para cualquier tipo de bebida.',
         keyWords: ['nanatsu no taizai','vaso', 'seven deadly', 'siete pecados', 'escanor'],
         precio: '$25.000',
         anime: 'seven deadly',
@@ -1216,6 +1287,7 @@ export const allAnimes = [
     {
         id: 22,
         name: 'Vaso Ban',
+        descripcion: 'Vasos fabricados en acero inoxidable. Vienen con tapa para hermetizar y evitar derrames de liquido. Perfectos para cualquier tipo de bebida.',
         keyWords: ['nanatsu no taizai','vaso', 'seven deadly', 'siete pecados', 'ban'],
         precio: '$25.000',
         anime: 'seven deadly',
@@ -1225,6 +1297,7 @@ export const allAnimes = [
     {
         id: 23,
         name: 'Vaso Diana',
+        descripcion: 'Vasos fabricados en acero inoxidable. Vienen con tapa para hermetizar y evitar derrames de liquido. Perfectos para cualquier tipo de bebida.',
         keyWords: ['nanatsu no taizai','vaso', 'seven deadly', 'siete pecados', 'diana'],
         precio: '$25.000',
         anime: 'seven deadly',
@@ -1234,6 +1307,7 @@ export const allAnimes = [
     {
         id: 24,
         name: 'Vaso Elizabeth',
+        descripcion: 'Vasos fabricados en acero inoxidable. Vienen con tapa para hermetizar y evitar derrames de liquido. Perfectos para cualquier tipo de bebida.',
         keyWords: ['nanatsu no taizai','vaso', 'seven deadly', 'siete pecados', 'elizabeth'],
         precio: '$25.000',
         anime: 'seven deadly',
@@ -1243,6 +1317,7 @@ export const allAnimes = [
     {
         id: 25,
         name: 'Vaso Zeldris',
+        descripcion: 'Vasos fabricados en acero inoxidable. Vienen con tapa para hermetizar y evitar derrames de liquido. Perfectos para cualquier tipo de bebida.',
         keyWords: ['nanatsu no taizai','vaso', 'seven deadly', 'siete pecados', 'zeldris'],
         precio: '$25.000',
         anime: 'seven deadly',

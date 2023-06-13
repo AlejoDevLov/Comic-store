@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { carContext } from "../states/carState";
 import { SizeTShirt } from "./SizeTShirt";
+import { Link } from "react-router-dom";
 
 const initialClass = '';
 
@@ -35,7 +36,7 @@ export const Article = ({ element, onSetState }) => {
 
   return (
       <div className="card animate__animated animate__slideInUp" key={ id }>
-          <div className='image'><img src={url} alt={anime} /></div>
+          <div className='image'><Link to={`../articlePage/${id}-${name.replace(/\s/g,'-')}`}><img src={url} alt={anime} loading="lazy"/></Link></div>
           <div className='title'><h2>{name}</h2></div>
             {
               element?.talla && <SizeTShirt sizes={ element.talla }/> 
