@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-import '../CSS/header.css';
 import { carContext } from '../states/carState';
 import { useContext, useEffect, useRef, useState } from 'react';
 import { carListContext } from '../states/listCarState';
@@ -7,6 +5,8 @@ import { listContext } from '../states/shopListState/listContext';
 import { FilterMenu } from './FilterMenu';
 import { HelpComponent } from './HelpComponent';
 import { IconsNavbar } from './IconsNavbar';
+import { setIconHelp } from '../helpers';
+import '../CSS/header.css';
 
 
 export const Header = () => {
@@ -33,7 +33,7 @@ export const Header = () => {
       : setClassCarDiv('car-counter hide-counter');
   },[stateCar]);
 
-  const totalElemetnsCar = stateCar.reduce( (prevValue, item) => {
+  const totalElementsCar = stateCar.reduce( (prevValue, item) => {
       return prevValue + item.units;
   }, 0); 
 
@@ -71,14 +71,6 @@ export const Header = () => {
     }
   }
 
-  const setIconHelp = () => {
-    if(helpIcon.current.classList.contains('filter-clip')){
-      setClassHelpIcon('container-help');
-    }else{
-      setClassHelpIcon('container-help filter-clip');
-    }
-  }
-
 
   return (
     <>
@@ -86,9 +78,9 @@ export const Header = () => {
             <div className='filter'><img src="../../icons/Bars3BottomLeft.svg" alt="menu-icon" height="50%" onClick={setFilterClass}/></div>
             <div className="search"><input type="text" placeholder='Buscar...' onKeyDown={ searchKeywords } ref={inputSearch}/><img src="../../icons/MagnifyingGlass.svg" alt="icon-search" height="50%" onClick={ searchKeywordsOnClick }/></div>
             <IconsNavbar 
-              setIconHelp={setIconHelp} 
+              setIconHelp={() => setIconHelp(helpIcon, setClassHelpIcon)} 
               classCarDiv={classCarDiv} 
-              totalElemetnsCar={totalElemetnsCar} 
+              totalElementsCar={totalElementsCar} 
               handleCarList={handleCarList}
             />
         </nav>

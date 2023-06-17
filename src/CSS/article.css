@@ -34,10 +34,9 @@
     aspect-ratio: 1/2;
     max-width: 220px;
     min-width: 170px;
-    /* background-color: aquamarine; */
     margin-top: 5%;
-    /* border: 5px solid #008F8C; */
     border-radius: 7px;
+    animation: aparition .7s ease forwards;
 }
 
 .card:hover {
@@ -69,7 +68,7 @@
 }
 
 .title{
-    height: 15%;
+    /* height: 15%; */
     /* background-color: bisque; */
 }
 

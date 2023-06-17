@@ -35,7 +35,7 @@ export const Article = ({ element, onSetState }) => {
 
 
   return (
-      <div className="card animate__animated animate__slideInUp" key={ id }>
+      <div className="card" key={ id }>
           <div className='image'><Link to={`../articlePage/${id}-${name.replace(/\s/g,'-')}`}><img src={url} alt={anime} loading="lazy"/></Link></div>
           <div className='title'><h2>{name}</h2></div>
             {

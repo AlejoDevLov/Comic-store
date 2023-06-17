@@ -13,8 +13,12 @@ export const Shop = () => {
   // desestructuracion de 'anime' en params.anime
   const { anime } = useParams();
 
-  const { setProducts, products, setInitialProducts } = useContext(listContext);
+  const { setProducts, products, setInitialProducts, setAnimeUrl } = useContext(listContext);
   
+  useEffect( () => {
+    setAnimeUrl(anime);
+  },[]);
+
   const productos = useMemo(() => { 
     let productos = allAnimes;
 
