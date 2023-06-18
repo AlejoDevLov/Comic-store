@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useState } from "react"
 import { listContext } from "./listContext"
 
 
@@ -6,7 +6,7 @@ export const ListProvider = ({ children }) => {
 
     const [initialProducts, setInitialProducts] = useState([]);
     const [products, setProducts] = useState(initialProducts);
-    const [animeUrl, setAnimeUrl] = useState('');
+    const [animeUrl, setAnimeUrl] = useState( localStorage.getItem('url') || '');
 
     useEffect( () => {
         setProducts(initialProducts);

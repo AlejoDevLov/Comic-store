@@ -10,7 +10,7 @@ export const CarouselArticle = ({ propsCarousel }) => {
   return (
     <section className="related-products">
 
-          <h2>Poductos similares</h2>
+          <h2>Productos similares</h2>
 
           <div className="slider-container">
             <div className="slider-grande" ref={divGrande}>

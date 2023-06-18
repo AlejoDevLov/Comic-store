@@ -1,76 +1,23 @@
-import { useCallback, useMemo, useEffect, useContext } from 'react';
-import { allAnimes } from '../helpers';
+import { useEffect } from 'react';
 import { Article } from './Article';
-
-import '../CSS/article.css';
-import { useParams } from 'react-router-dom';
 import { MenuCarList } from './MenuCarList';
-import { listContext } from '../states/shopListState/listContext';
+import { useShop } from './hooks/useShop';
+import '../CSS/article.css';
 
 
 export const Shop = () => {
 
-  // desestructuracion de 'anime' en params.anime
-  const { anime } = useParams();
-
-  const { setProducts, products, setInitialProducts, setAnimeUrl } = useContext(listContext);
-  
-  useEffect( () => {
-    setAnimeUrl(anime);
-  },[]);
-
-  const productos = useMemo(() => { 
-    let productos = allAnimes;
-
-    switch(anime){
-        case 'demon-slayer':
-          productos = productos.filter( item => {
-            return item.anime === 'demon slayer';
-          });
-          return productos;
-
-        case 'dragon-ball':
-          productos = productos.filter( item => {
-            return item.anime === 'Dragon ball';
-          });
-          return productos;
-
-        case 'mario':
-          productos = productos.filter( item => {
-            return item.anime === 'Mario';
-          } );
-          return productos;
-
-        case 'sevenDeadly':
-          productos = productos.filter( item => {
-            return item.anime === 'seven deadly';
-          } );
-          return productos;
-
-        case 'los-simpsons':
-          productos = productos.filter( item => {
-            return item.anime === 'los Simpson';
-          } );
-          return productos;
-
-        default:
-          console.error('Hubo un error en la ruta');      
-    }
-  },[anime]);
+  const {
+    setInitialProducts,
+    onReduceQuantity,
+    anime,
+    productos,
+    products
+  } = useShop();
 
   useEffect( () => {
     setInitialProducts(productos);
   },[anime]);
-
-
-  const onReduceQuantity  = useCallback( (anime, id) => {
-        setProducts( products.map( element => {
-          if( element.anime === anime && element.id === id){
-            element.cantidad -= 1;
-          }
-          return element;
-        }))        
-  },[products]);
   
 
   return (

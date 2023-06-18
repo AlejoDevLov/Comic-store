@@ -1,27 +1,21 @@
-import { carContext } from '../states/carState';
-import { useContext, useEffect, useRef, useState } from 'react';
-import { carListContext } from '../states/listCarState';
-import { listContext } from '../states/shopListState/listContext';
+import { useEffect } from 'react';
 import { FilterMenu } from './FilterMenu';
 import { HelpComponent } from './HelpComponent';
 import { IconsNavbar } from './IconsNavbar';
 import { setIconHelp } from '../helpers';
+import { useHeader } from './hooks/useHeader';
 import '../CSS/header.css';
 
 
 export const Header = () => {
 
-  const { stateCar } = useContext( carContext );
-  const { handleCarList } = useContext(carListContext);
-  const { setProducts, initialProducts } = useContext(listContext);
-
-  const [classCarDiv, setClassCarDiv] = useState('car-counter');
-  const [classFilter, setClassFilter] = useState('filter-container');
-  const [classHelpIcon, setClassHelpIcon] = useState('container-help');
-
-  const inputSearch = useRef();
-  const iconFilter = useRef();
-  const helpIcon = useRef();
+  const {
+    inputSearch, iconFilter, helpIcon,
+    handleCarList, classCarDiv, setClassCarDiv,
+    classFilter, classHelpIcon, setClassHelpIcon,
+    totalElementsCar, searchKeywords, searchKeywordsOnClick,
+    setFilterClass, stateCar
+  } = useHeader();
 
   useEffect( () => {
     stateCar.length == 0 && setClassCarDiv('car-counter hide-counter');
@@ -32,44 +26,6 @@ export const Header = () => {
       ? setClassCarDiv('car-counter') 
       : setClassCarDiv('car-counter hide-counter');
   },[stateCar]);
-
-  const totalElementsCar = stateCar.reduce( (prevValue, item) => {
-      return prevValue + item.units;
-  }, 0); 
-
-  const searchKeywords = (e) => {
-    // console.log(e.key);
-    if(e.key == 'Enter'){
-      const keys = e.target.value.toLowerCase().trim();
-      if( keys != ''){
-        setProducts( initialProducts.filter( product => {
-          return product.keyWords.includes(keys);
-        }) )
-        return;
-      }
-      setProducts(initialProducts);
-    }
-  }
-
-  const searchKeywordsOnClick = () => {
-    const keys = inputSearch.current.value.toLowerCase().trim();
-    if( keys != ''){
-      setProducts( initialProducts.filter( product => {
-          return product.keyWords.includes(keys);
-      }) )
-      return;
-    }
-    setProducts(initialProducts);
-  }
-
-  const setFilterClass = () => {
-    if(!iconFilter) return;
-    if( iconFilter.current.classList.contains('filter-clip')){
-      setClassFilter('filter-container');
-    } else{
-      setClassFilter('filter-container filter-clip');
-    }
-  }
 
 
   return (

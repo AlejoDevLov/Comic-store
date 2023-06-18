@@ -7,6 +7,8 @@
 body{
   background-color: black;
   user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 
 .container{
@@ -15,14 +17,16 @@ body{
   min-height: 100vh;
   min-width: 100vw;
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.455)), url(/src/images/fondo/Fondo\ pagina\ copia.jpg);
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.455)), url(/src/images/fondo/Fondo\ pagina\ copia.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
   padding: 0;
   overflow: hidden;
-  animation-name: animationHome ;
-  animation-duration: .4s;
-  animation-timing-function: linear;
+  -webkit-animation: animationHome .4s linear;
+  -o-animation: animationHome .4s linear;
+  -ms-animation: animationHome .4s linear;
+  animation: animationHome .4s linear;
 }
 
 .title-div{
@@ -37,11 +41,7 @@ body{
   font-size: clamp(2rem, 150%, 3rem);
   display: block;
   font-family: comic;
-  background: linear-gradient(to right, blue, purple, orange, red);
-  -webkit-text-fill-color: rgb(244, 239, 239);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -moz-background-clip: text;
+  color: rgb(244, 239, 239);
   text-shadow: 0px 10px 10px rgba(233, 101, 40, 0.952), 10px 0px 10px rgba(188, 40, 233, 0.952), 0px -10px 10px rgba(40, 53, 233, 0.952), -10px 0px 10px rgba(233, 40, 75, 0.952);
 }
 
@@ -61,10 +61,12 @@ body{
   border-radius: 5px;
   overflow: hidden;
   display: flex;
+  display: -webkit-flex;
 }
 
 .swiper-slide a{
   display: flex;
+  display: -webkit-flex;
   width: 100%;
   /* cursor: grab; */
 }
@@ -72,7 +74,9 @@ body{
 .swiper-slide img {
   width: 100%;
   object-fit: cover;
+  -o-object-fit: cover;
   object-position: center;
+  -o-object-position: center;
 }
 
 @media screen and ( min-width: 900px ){
@@ -90,3 +94,34 @@ body{
     clip-path: circle( 100% at 0% 0%);
   }
 }
+
+@-o-keyframes animationHome{
+  from {
+    clip-path: circle( 0% at 0% 0%);
+  }
+
+  to {
+    clip-path: circle( 100% at 0% 0%);
+  }
+}
+
+@-moz-keyframes animationHome{
+  from {
+    clip-path: circle( 0% at 0% 0%);
+  }
+
+  to {
+    clip-path: circle( 100% at 0% 0%);
+  }
+}
+
+@-webkit-keyframes animationHome{
+  from {
+    clip-path: circle( 0% at 0% 0%);
+  }
+
+  to {
+    clip-path: circle( 100% at 0% 0%);
+  }
+}
+

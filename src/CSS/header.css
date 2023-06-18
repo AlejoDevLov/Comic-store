@@ -1,9 +1,10 @@
 .navbar{
     height: 70px;
     width: 100%;
-    background-color: #5114A6;
+    background-color: #5809EC;
     position: fixed;
     display: flex;
+    display: -webkit-flex;
     justify-content: space-between;
     align-items: center;
     z-index: 2;
@@ -11,22 +12,28 @@
 
 .filter{
     width: 15%;
-    /* height: 100%; */
     height: 10vw;
     max-height: 70px;
     display: flex;
+    display: -webkit-flex;
     align-items: center;
     justify-content: center;
+    /* background-color: aliceblue; */
 }
 
 .filter img{
-    width: 40px;
+    /* width: 40px; */
+    width: 40%;
+    height: 60%;
+    max-width: 40px;
+    max-height: 70px;
 }
 
 .search{
     width: 60%;
     height: 100%;
     display: flex;
+    display: -webkit-flex;
     align-items: center;
     justify-content: center;
 }
@@ -62,22 +69,28 @@
 .search img:hover{
     cursor: pointer;
     filter: invert(20%);
+    -webkit-filter: invert(20%);
 }
 
 .icons{
     width: 25%;
+    min-width: 110px;
     height: 100%;
     display: flex;
+    display: -webkit-flex;
     justify-content: right;
     align-items: center;
     margin-left: 10px;
+    gap: 0.7em;
+    /* background-color: aquamarine; */
 }
 
 .icons > div{
     width: 30%;
-    height: 10vw;
+    max-width: 40px;
     max-height: 70px;
     display: flex;
+    display: -webkit-flex;
     align-items: center;
     justify-content: center;
     /* background-color: aliceblue; */
@@ -89,43 +102,53 @@
     height: 100%;
     /* background-color: aqua; */
     display: flex;
+    display: -webkit-flex;
     align-items: center;
     justify-content: center;
     transition: filter .2s ease-out;
+    -o-transition: filter .2s ease-out;
+    -moz-transition: filter .2s ease-out;
+    -webkit-transition: filter .2s ease-out;
 }
 
 .icons div a:hover{
-    filter: invert(80%)
+    filter: invert(80%);
+    -webkit-filter: invert(80%);
 }
 
 .account img:hover,
 .filter img:hover{
     filter: invert(80%);
+    -webkit-filter: invert(80%);
     cursor: pointer;
 }
 
 .car{
     position: relative;
+    /* background-color: aliceblue; */
 }
 
 .car-counter{
     position: absolute;
     width: 40%;
+    min-width: 20px;
     max-width: 20px;
     aspect-ratio: 1/1;
     background-color: red;
     border-radius: 50%;
     display: flex;
+    display: -webkit-flex;
     align-items: center;
     justify-content: center;
     color: white;
-    bottom: 10%;
-    right: 25%;
+    bottom: -5%;
+    right: -5%;
     font-weight: bold;
 }
 
 .car img:hover{
     filter: invert(80%);
+    -webkit-filter: invert(80%);
     cursor: pointer;
 }
 
@@ -142,6 +165,7 @@
     background-color: rgba(6, 6, 6, 0.80);
     /* border-bottom: 4px solid black; */
     display: flex;
+    display: -webkit-flex;
     align-items: center;
     justify-content: space-around;
     transition: clip-path .2s linear;
@@ -168,6 +192,7 @@
 
 .buttons-filter{
     display: flex;
+    display: -webkit-flex;
     flex-wrap: wrap;
     gap: 5px;
     align-items: center;
@@ -215,7 +240,9 @@
 .container-help{
     width: 200px;
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
+    -ms-flex-direction: column;
     align-items: center;
     justify-content: right;
     background-color: rgb(20, 20, 20);
@@ -226,6 +253,9 @@
     z-index: 15;
     clip-path: inset(0% 0% 100% 0%);
     transition: clip-path .2s linear;
+    -o-transition: clip-path .2s linear;
+    -moz-transition: clip-path .2s linear;
+    -webkit-transition: clip-path .2s linear;
 }
 
 .container-help h4{
@@ -247,12 +277,11 @@
         min-height: 500px;
         max-width: 250px;
         flex-direction: column;
+        -ms-flex-direction: column;
         align-items: center;
         justify-content: start;
         gap: 10%;
         padding-top: 8%;
-        /* border-right: 4px solid black; */
-        /* border-bottom: 4px solid black; */
         background-color: rgba(6, 6, 6, 0.80);
     }
 
@@ -276,7 +305,9 @@
     .buttons-filter{
         gap: 10px;
         display: flex;
+        display: -webkit-flex;
         flex-direction: row;
+        -ms-flex-direction: row;
         margin-top: 20px;
     }
 

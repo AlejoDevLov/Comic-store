@@ -18,7 +18,6 @@ export const ListCarProvider = ({ children }) => {
                 return;
             }
         }
-        console.log(itemCarList.current)
       },[]);
 
 

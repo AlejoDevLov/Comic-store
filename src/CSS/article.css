@@ -1,18 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex&display=swap');
 
-
 .article{
     width: 100%;
     min-height: 100vh;
     padding: 100px 40px;
     display: flex;
+    display: -webkit-flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     gap: 5%;
-    background-color: #ff9933;
+    background: #7b4397;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #d0232f, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d0232f, #7b4397); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background-color: #ff9933; */
     overflow: hidden;
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     font-family: 'Roboto Flex', sans-serif;
 }
 
@@ -20,7 +26,9 @@
     width: 100%;
     height: 100%;
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
+    -ms-flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -33,10 +41,13 @@
     width: 25%;
     aspect-ratio: 1/2;
     max-width: 220px;
-    min-width: 170px;
+    min-width: 150px;
     margin-top: 5%;
     border-radius: 7px;
     animation: aparition .7s ease forwards;
+    -webkit-animation: aparition .7s ease forwards;
+    -o-animation: aparition .7s ease forwards;
+    -ms-animation: aparition .7s ease forwards;
 }
 
 .card:hover {
@@ -55,6 +66,7 @@
     height: 60%;
     /* background-color: aquamarine; */
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
     border-radius:7px;
     overflow: hidden;
@@ -64,18 +76,22 @@
     height: 100%;
     width: 100%;
     object-fit: contain;
+    -o-object-fit: contain;
     border-radius: 7px;
 }
 
 .title{
-    /* height: 15%; */
+    min-height: 15%;
     /* background-color: bisque; */
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .title h2{
     text-align: center;
     font-size: 150%;
-    
 }
 
 .size-container{
@@ -83,6 +99,7 @@
     height: 10%;
     /* background-color: #008F8C; */
     display: flex;
+    display: -webkit-flex;
     align-items: center;
     justify-content: space-evenly;
     padding-top: 10px;
@@ -90,9 +107,10 @@
 
 .price{
     height: 10%;
-    color: rgb(68, 99, 222);
+    color: rgb(68, 222, 168);
     /* background-color: aliceblue; */
     display: flex;
+    display: -webkit-flex;
     align-items: center;
     justify-content: center;
     margin: 15px 0px 5px;
@@ -103,13 +121,14 @@
 }
 
 .color-cantidad{
-    color: rgb(188, 5, 5);
+    color: #fff;
     font-weight: bold;
 }
 
 .button{
     height: 15%;
     display: flex;
+    display: -webkit-flex;
     align-items: center;
     justify-content: center;
     /* background-color: aqua; */

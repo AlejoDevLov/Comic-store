@@ -1,52 +1,16 @@
-import { useContext, useEffect, useMemo, useRef } from 'react';
 import '../CSS/menuCarList.css';
-import { carContext } from '../states/carState/carContext';
-import { carListContext } from '../states/listCarState';
-import { listContext } from '../states/shopListState/listContext';
+import { useMenuCar } from './hooks/useMenuCar';
 
 
 export const MenuCarList = () => {
 
-  const { stateCar, dispatchCar } = useContext(carContext);
-  const { classCarList, itemCarList } = useContext(carListContext);
-  const { setProducts, products } = useContext(listContext);
-
-  
-  let totalFormated;
-  if(stateCar.length > 0){
-    let total = stateCar.reduce( (add, item) =>{ 
-      return add + Number(item.precio.replace(/[^0-9.-]+/g,""))*item.units;
-    }, 0);
-
-    total *= 1000;
-    totalFormated = total.toLocaleString('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 });
-    // console.log(totalFormated);
-  }
-  const total = totalFormated ?? '$ 0.00';
-
-  // console.log(stateCar);
-
-  const removeItem = (name, id) => {
-    const action = {
-      type: '[TODO] delete article',
-      payload: {
-        anime: name,
-        id,
-      }
-    }
-    dispatchCar( action );
-
-    setProducts( products.filter( product => {
-
-        if( product.anime === name && product.id === id ){
-          product.cantidad += 1;
-        }
-        return product;
-      })
-      ) 
-  }
-
-
+  const {
+    classCarList,
+    itemCarList,
+    total,
+    removeItem,
+    stateCar
+  } = useMenuCar();
 
   return (
     <>

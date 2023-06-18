@@ -2,8 +2,8 @@ const initialState = [];
 
 // Reducer que se pasará como argumento al useReducer
 export const reducer = ( state = initialState, action = {} ) => {
-    switch(action.type) {
 
+    switch(action.type) {
         case '[TODO] add article':
             if( state.includes(action.payload) ){
                 state.map( item => {
@@ -13,10 +13,13 @@ export const reducer = ( state = initialState, action = {} ) => {
                     } 
                     return item;
                 })
+                localStorage.setItem('stateCar', JSON.stringify(state));
                 return [ ...state];
             } else {
                 action.payload.units = 1;
-                return [...state, action.payload ];
+                const newState = [...state, action.payload ];
+                localStorage.setItem('stateCar', JSON.stringify(newState));
+                return newState;
             }
                                 
         case '[TODO] delete article':
@@ -33,9 +36,10 @@ export const reducer = ( state = initialState, action = {} ) => {
                     }
                 }
             });
+            localStorage.setItem('stateCar', JSON.stringify(state));
             return [...state ]
 
         default:
-            return state;
+            return [...state];
     }
 }

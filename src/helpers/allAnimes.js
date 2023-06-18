@@ -796,7 +796,7 @@ export const allAnimes = [
     },
     {
         id: 1,
-        name: 'Camiseta Mario & Luigi',
+        name: 'Camiseta Mario Y Luigi',
         descripcion: 'Camiseta  hecha en Algodon 80% y Poliéster 20%. Con acabados de alta calidad. Producto 100% Colombiano. Todas nuestras camisetas cuentan con 6 meses de garantía.',
         keyWords: ['camiseta', 'mario', 'luigi'],
         talla: [ 'S', 'M', 'L'],
@@ -808,7 +808,7 @@ export const allAnimes = [
     },
     {
         id: 2,
-        name: 'Camibuso Mario & Luigi',
+        name: 'Camibuso Mario Y Luigi',
         descripcion: 'Camibuso  hecho en Algodon 100%. Con acabados de alta calidad. Producto 100% Colombiano. Todas nuestras camisetas cuentan con 6 meses de garantía.',
         keyWords: ['camiseta', 'buso', 'saco','camibuso', 'mario', 'luigi'],
         talla: [ 'S', 'M', 'L', 'XL'],
@@ -820,7 +820,7 @@ export const allAnimes = [
     },
     {
         id: 3,
-        name: 'Camiseta Mario & Donkey kong',
+        name: 'Camiseta Mario Y Donkey kong',
         descripcion: 'Camiseta  hecha en Algodon 80% y Poliéster 20%. Con acabados de alta calidad. Producto 100% Colombiano. Todas nuestras camisetas cuentan con 6 meses de garantía.',
         keyWords: ['camiseta', 'mario', 'luigi', 'kong', 'jhoshi', 'yoshi'],
         talla: [ 'S', 'M'],
@@ -832,7 +832,7 @@ export const allAnimes = [
     },
     {
         id: 4,
-        name: 'Buso Mario & Pokemon',
+        name: 'Buso Mario Y Pokemon',
         descripcion: 'Camiseta  hecha en Algodon 100%.Con acabados de alta calidad. Producto 100% Colombiano. Todas nuestras camisetas cuentan con 6 meses de garantía.',
         keyWords: ['camiseta', 'buso', 'saco', 'mario', 'pokemon', 'peaches'],
         talla: [ 'S', 'L'],

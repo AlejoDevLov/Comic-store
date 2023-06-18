@@ -1,38 +1,19 @@
-import { useContext, useEffect, useState } from "react";
-import { carContext } from "../states/carState";
+import { useEffect } from "react";
 import { SizeTShirt } from "./SizeTShirt";
 import { Link } from "react-router-dom";
+import { useArticle } from "./hooks/useArticle";
 
-const initialClass = '';
 
 export const Article = ({ element, onSetState }) => {
 
-  const [classBtn, setClassBtn] = useState(initialClass);
-
-  const { url, id, name, precio, anime, cantidad } = element;
-
-  const { dispatchCar } = useContext(carContext)
-  
-  const addArticle = () => {
-    const action = {
-      type: '[TODO] add article',
-      payload: element,
-    }
-
-    dispatchCar(action);
-  }
-
-  const executeFn = (anime, id) => {
-    addArticle();
-    onSetState(anime, id)
-  }
-
-  const isAvailable = ( cantidad < 1 );
+  const { classBtn, setClassBtn,
+    url, id, anime, precio, cantidad,
+    name, executeFn, isAvailable 
+  } = useArticle(element, onSetState);
 
   useEffect( () => {
     isAvailable ? setClassBtn('disabled') : setClassBtn('');
   }, [isAvailable] );
-
 
   return (
       <div className="card" key={ id }>

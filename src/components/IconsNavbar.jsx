@@ -2,7 +2,6 @@ import { Link } from "react-router-dom"
 
 export const IconsNavbar = ({ classCarDiv,totalElementsCar,handleCarList, setIconHelp }) => {
 
-
   return (
     <>
     <div className="icons">
