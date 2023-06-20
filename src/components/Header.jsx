@@ -31,8 +31,8 @@ export const Header = () => {
   return (
     <>
         <nav className="navbar">
-            <div className='filter'><img src="../../icons/Bars3BottomLeft.svg" alt="menu-icon" height="50%" onClick={setFilterClass}/></div>
-            <div className="search"><input type="text" placeholder='Buscar...' onKeyDown={ searchKeywords } ref={inputSearch}/><img src="../../icons/MagnifyingGlass.svg" alt="icon-search" height="50%" onClick={ searchKeywordsOnClick }/></div>
+            <div className='filter'><img src="/icons/Bars3BottomLeft.svg" alt="menu-icon" height="50%" onClick={setFilterClass}/></div>
+            <div className="search"><input type="text" placeholder='Buscar...' onKeyDown={ searchKeywords } ref={inputSearch}/><img src="/icons/MagnifyingGlass.svg" alt="icon-search" height="50%" onClick={ searchKeywordsOnClick }/></div>
             <IconsNavbar 
               setIconHelp={() => setIconHelp(helpIcon, setClassHelpIcon)} 
               classCarDiv={classCarDiv} 

@@ -3,7 +3,7 @@
 .article{
     width: 100%;
     min-height: 100vh;
-    padding: 100px 40px;
+    padding: 100px 10px;
     display: flex;
     display: -webkit-flex;
     align-items: center;

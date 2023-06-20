@@ -11,7 +11,7 @@ export const useArticlePage = () => {
 
     const { handleCarList } = useContext(carListContext);
     const { stateCar, dispatchCar } = useContext( carContext );
-    const { setProducts, animeUrl } = useContext(listContext);
+    const { setProducts, animeUrl, products } = useContext(listContext);
 
     const [classCarDiv, setClassCarDiv] = useState('car-counter');
     const [classHelpIcon, setClassHelpIcon] = useState('container-help');
@@ -22,7 +22,7 @@ export const useArticlePage = () => {
 
     const {itemName} = useParams();
     
-    const item = getItemById(itemName);
+    const item = getItemById(products, itemName, setProducts);
 
     const helpIcon = useRef();
     const divGrande = useRef();
@@ -44,7 +44,6 @@ export const useArticlePage = () => {
     setProducts( allAnimes.map( element => {
         if( element.anime === anime && element.id === id){
         element.cantidad -= 1;
-        console.log('entrando')
         }
         return element;
     }))
@@ -62,7 +61,7 @@ export const useArticlePage = () => {
 
     const setClassIconArrow = () => {
         setClassIcon('mousedown-icons');
-        if(counter === 11) return;
+        if(counter === 11) setCounter(0);
         setCounter( (counter) => ++counter);
     }
 
@@ -72,7 +71,7 @@ export const useArticlePage = () => {
 
     const setClassIconArrow2 = () => {
         setClassIcon2('mousedown-icons');
-        if(counter === 0 ) return;
+        if(counter === 0 ) setCounter(11);
         setCounter( (counter) => --counter);
     }
 

@@ -14,6 +14,7 @@ export const ArticlePage = () => {
     removeClassIconArrow, removeClassIconArrow2, translateCarousel, item,
     divGrande, stateCar } = useArticlePage();
 
+    // console.log(animeUrl);
 
   useEffect( () => {
     stateCar.length == 0 && setClassCarDiv('car-counter hide-counter');

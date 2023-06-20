@@ -5,7 +5,7 @@ export const useMenuCar = () => {
 
     const { stateCar, dispatchCar } = useContext(carContext);
     const { classCarList, itemCarList } = useContext(carListContext);
-    const { setProducts, products } = useContext(listContext);
+    const { setProducts, products, animeUrl } = useContext(listContext);
 
 
     let totalFormated;
@@ -37,7 +37,8 @@ export const useMenuCar = () => {
             }
             return product;
         })
-        ) 
+        )
+        localStorage.setItem(animeUrl, JSON.stringify(products));
     }
 
     return {

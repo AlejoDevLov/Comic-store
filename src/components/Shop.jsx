@@ -8,17 +8,15 @@ import '../CSS/article.css';
 export const Shop = () => {
 
   const {
-    setInitialProducts,
     onReduceQuantity,
-    anime,
-    productos,
-    products
+    products,
   } = useShop();
-
-  useEffect( () => {
-    setInitialProducts(productos);
-  },[anime]);
   
+    // if(JSON.parse(localStorage.getItem(anime))){
+    //     console.log('entrando');
+    //     setProducts(JSON.parse(localStorage.getItem(anime)));
+    //     console.log(JSON.parse(localStorage.getItem(anime)))
+    //     }
 
   return (
     <>

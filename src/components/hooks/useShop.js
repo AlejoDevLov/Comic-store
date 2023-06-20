@@ -11,11 +11,11 @@ export const useShop = () => {
 
     useEffect( () => {
         setAnimeUrl(anime);
-        localStorage.setItem('url', anime);
-    },[]);
+        localStorage.setItem('url',anime);
+    },[anime]);
 
     const productos = useMemo(() => { 
-        let productos = allAnimes;
+        let productos = [...allAnimes];
 
         switch(anime){
             case 'demon-slayer':
@@ -51,22 +51,37 @@ export const useShop = () => {
             default:
             console.error('Hubo un error en la ruta');      
         }
-    },[anime]);
+    },[]);
 
-    const onReduceQuantity  = useCallback( (anime, id) => {
+    useEffect( () => {
+        setInitialProducts(productos);
+        setProducts(productos);
+    },[]);
+
+    const onReduceQuantity  = useCallback( (anime2, id) => {
         setProducts( products.map( element => {
-        if( element.anime === anime && element.id === id){
+        if( element.anime === anime2 && element.id === id){
             element.cantidad -= 1;
         }
         return element;
-        }))        
-    },[products]);
+        }));
+        localStorage.setItem(anime, JSON.stringify(products));
+    },[products[0]]);
+
+    useEffect(() => {
+        if(JSON.parse(localStorage.getItem(anime))){
+            console.log('entrando');
+            setProducts(JSON.parse(localStorage.getItem(anime)));
+            console.log(JSON.parse(localStorage.getItem(anime)))
+            }
+        }, [])
 
     return {
         setInitialProducts,
         onReduceQuantity,
         anime,
         productos,
-        products
+        products,
+        setProducts
     }
 }
