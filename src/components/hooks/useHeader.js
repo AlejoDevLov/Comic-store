@@ -6,7 +6,7 @@ export const useHeader = () => {
 
     const { stateCar } = useContext( carContext );
     const { handleCarList } = useContext(carListContext);
-    const { setProducts, initialProducts } = useContext(listContext);
+    const { setProducts, globalProducts, products, currentAnime } = useContext(listContext);
 
     const [classCarDiv, setClassCarDiv] = useState('car-counter');
     const [classFilter, setClassFilter] = useState('filter-container');
@@ -24,24 +24,24 @@ export const useHeader = () => {
     if(e.key == 'Enter'){
         const keys = e.target.value.toLowerCase().trim();
         if( keys != ''){
-        setProducts( initialProducts.filter( product => {
-            return product.keyWords.includes(keys);
+        setProducts( [...globalProducts].filter( product => {
+            return product.keyWords.includes(keys) && product.anime == currentAnime;
         }) )
         return;
         }
-        setProducts(initialProducts);
+        setProducts([...globalProducts].filter( item => item.anime === currentAnime));
     }
     }
 
     const searchKeywordsOnClick = () => {
     const keys = inputSearch.current.value.toLowerCase().trim();
     if( keys != ''){
-        setProducts( initialProducts.filter( product => {
-            return product.keyWords.includes(keys);
+        setProducts( [...globalProducts].filter( product => {
+            return product.keyWords.includes(keys) && product.anime == products[0].anime;
         }) )
         return;
     }
-    setProducts(initialProducts);
+    setProducts([...globalProducts].filter( item => item.anime === currentAnime));
     }
 
     const setFilterClass = () => {

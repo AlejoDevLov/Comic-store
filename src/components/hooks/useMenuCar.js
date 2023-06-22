@@ -5,7 +5,7 @@ export const useMenuCar = () => {
 
     const { stateCar, dispatchCar } = useContext(carContext);
     const { classCarList, itemCarList } = useContext(carListContext);
-    const { setProducts, products, animeUrl } = useContext(listContext);
+    const { globalProducts, setGlobalProducts } = useContext(listContext);
 
 
     let totalFormated;
@@ -20,7 +20,7 @@ export const useMenuCar = () => {
     const total = totalFormated ?? '$ 0.00';
 
 
-    const removeItem = (name, id) => {
+    const removeItem = (name, id, anime) => {
         const action = {
             type: '[TODO] delete article',
             payload: {
@@ -29,16 +29,12 @@ export const useMenuCar = () => {
             }
         }
         dispatchCar( action );
-
-        setProducts( products.filter( product => {
-
+        setGlobalProducts([...globalProducts].map( product => {
             if( product.anime === name && product.id === id ){
                 product.cantidad += 1;
             }
             return product;
-        })
-        )
-        localStorage.setItem(animeUrl, JSON.stringify(products));
+        }))
     }
 
     return {

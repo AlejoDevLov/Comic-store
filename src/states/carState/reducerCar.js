@@ -2,19 +2,20 @@ const initialState = [];
 
 // Reducer que se pasará como argumento al useReducer
 export const reducer = ( state = initialState, action = {} ) => {
+    const existsData = state.some(item => item.anime == action.payload.anime && item.id === action.payload.id);
 
     switch(action.type) {
         case '[TODO] add article':
-            if( state.includes(action.payload) ){
-                state.map( item => {
+            if( existsData){
+                state = state.map( item => {
                     if (item.id === action.payload.id && item.anime === action.payload.anime){
-                        if( !item.units ) item.units = 1;
                         if ( item.units ) item.units += 1;
+                        if( !item.units ) item.units = 1;
                     } 
                     return item;
                 })
                 localStorage.setItem('stateCar', JSON.stringify(state));
-                return [ ...state];
+                return [...state];
             } else {
                 action.payload.units = 1;
                 const newState = [...state, action.payload ];

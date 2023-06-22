@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Article } from './Article';
 import { MenuCarList } from './MenuCarList';
 import { useShop } from './hooks/useShop';
@@ -11,12 +10,7 @@ export const Shop = () => {
     onReduceQuantity,
     products,
   } = useShop();
-  
-    // if(JSON.parse(localStorage.getItem(anime))){
-    //     console.log('entrando');
-    //     setProducts(JSON.parse(localStorage.getItem(anime)));
-    //     console.log(JSON.parse(localStorage.getItem(anime)))
-    //     }
+
 
   return (
     <>

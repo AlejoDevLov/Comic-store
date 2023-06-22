@@ -1,12 +1,11 @@
 import { useContext, useRef } from "react";
-import { allAnimes } from "../../helpers";
 import { listContext } from "../../states/shopListState/listContext";
 
 export const useFilter = () => {
 
-    const { setProducts, initialProducts } = useContext(listContext);
+    const { setProducts, globalProducts, initialArray, currentAnime } = useContext(listContext);
 
-    const arrayAnime = [...allAnimes];
+    const arrayAnime = [...initialArray];
 
     const anime = useRef();
     const product = useRef();
@@ -46,7 +45,7 @@ export const useFilter = () => {
         }
 
         if( product.current.value !== '' && price.current.value !== ''){
-            setProducts( [...initialProducts].filter( item => item.keyWords.includes(product.current.value)).sort( (a,b) => {
+            setProducts( [...globalProducts].filter( item => item.keyWords.includes(product.current.value)).sort( (a,b) => {
                 if( price.current.value === 'menor' ){
                     return Number(a.precio.replace(/[^0-9.-]+/g,"")) - Number(b.precio.replace(/[^0-9.-]+/g,""))
                 } else{
@@ -59,9 +58,9 @@ export const useFilter = () => {
         if( anime.current.value !== '' ){
             setProducts( arrayAnime.filter( item => item.anime === anime.current.value));
         } 
-        if( product.current.value !== '') setProducts( initialProducts.filter( item => item.keyWords.includes(product.current.value)));
+        if( product.current.value !== '') setProducts( [...globalProducts].filter( item => item.keyWords.includes(product.current.value)));
         if( price.current.value !== '' ){
-            setProducts([...initialProducts].sort( (a,b) => {
+            setProducts([...globalProducts].sort( (a,b) => {
                 if( price.current.value === 'menor' ){
                     return Number(a.precio.replace(/[^0-9.-]+/g,"")) - Number(b.precio.replace(/[^0-9.-]+/g,""))
                 } else{
@@ -76,7 +75,7 @@ export const useFilter = () => {
         product.current.value = '';
         price.current.value = '';
 
-        setProducts(initialProducts);
+        setProducts([...globalProducts].filter( item => item.anime === currentAnime));
         
     }
 

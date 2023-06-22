@@ -1,52 +1,52 @@
 import { useCallback, useContext, useEffect, useMemo } from "react";
 import { listContext } from "../../states";
 import { useParams } from "react-router-dom";
-import { allAnimes } from "../../helpers";
 
 export const useShop = () => {
 
     const { anime } = useParams();
 
-    const { setProducts, products, setInitialProducts, setAnimeUrl } = useContext(listContext);
+    const { setProducts, products, setGlobalProducts, setAnimeUrl, 
+            globalProducts, initialArray, setCurrentAnime } = useContext(listContext);
 
     useEffect( () => {
         setAnimeUrl(anime);
-        localStorage.setItem('url',anime);
+        setCurrentAnime(shopItems[0].anime);
     },[anime]);
 
-    const productos = useMemo(() => { 
-        let productos = [...allAnimes];
+    const shopItems = useMemo(() => { 
+        let shopItems = [...globalProducts];
 
         switch(anime){
             case 'demon-slayer':
-            productos = productos.filter( item => {
+            shopItems = shopItems.filter( item => {
                 return item.anime === 'demon slayer';
             });
-            return productos;
+            return shopItems;
 
             case 'dragon-ball':
-            productos = productos.filter( item => {
+            shopItems = shopItems.filter( item => {
                 return item.anime === 'Dragon ball';
             });
-            return productos;
+            return shopItems;
 
             case 'mario':
-            productos = productos.filter( item => {
+            shopItems = shopItems.filter( item => {
                 return item.anime === 'Mario';
             } );
-            return productos;
+            return shopItems;
 
             case 'sevenDeadly':
-            productos = productos.filter( item => {
+            shopItems = shopItems.filter( item => {
                 return item.anime === 'seven deadly';
             } );
-            return productos;
+            return shopItems;
 
             case 'los-simpsons':
-            productos = productos.filter( item => {
+            shopItems = shopItems.filter( item => {
                 return item.anime === 'los Simpson';
             } );
-            return productos;
+            return shopItems;
 
             default:
             console.error('Hubo un error en la ruta');      
@@ -54,34 +54,27 @@ export const useShop = () => {
     },[]);
 
     useEffect( () => {
-        setInitialProducts(productos);
-        setProducts(productos);
-    },[]);
+            setProducts(shopItems);
+    },[anime]);
+
 
     const onReduceQuantity  = useCallback( (anime2, id) => {
-        setProducts( products.map( element => {
-        if( element.anime === anime2 && element.id === id){
-            element.cantidad -= 1;
-        }
-        return element;
-        }));
-        localStorage.setItem(anime, JSON.stringify(products));
-    },[products[0]]);
-
-    useEffect(() => {
-        if(JSON.parse(localStorage.getItem(anime))){
-            console.log('entrando');
-            setProducts(JSON.parse(localStorage.getItem(anime)));
-            console.log(JSON.parse(localStorage.getItem(anime)))
+        setGlobalProducts([...globalProducts.map( element => {
+            if( element.anime === anime2 && element.id === id){
+                element.cantidad -= 1;
             }
-        }, [])
+            return element;
+        })])
+    },[])
+        
 
     return {
-        setInitialProducts,
+        setGlobalProducts,
         onReduceQuantity,
         anime,
-        productos,
+        shopItems,
         products,
-        setProducts
+        setProducts,
+        initialArray,
     }
 }

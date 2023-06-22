@@ -22,7 +22,7 @@ export const MenuCarList = () => {
                   <div className='img-car'><img src={item.url} alt={item.name} /></div>
                   <div className='title-car'>{item.name}</div>
                   <div className='price-car'>{item.precio}</div>
-                  <div className='subtract-icon-car'><ion-icon name="remove-circle-outline" onClick={ () => removeItem(item.anime, item.id) }></ion-icon></div>
+                  <div className='subtract-icon-car'><ion-icon name="remove-circle-outline" onClick={ () => removeItem(item.anime, item.id, item.anime) }></ion-icon></div>
                   <div className="units">{item.units}</div>
                 </div>
                 <hr/>

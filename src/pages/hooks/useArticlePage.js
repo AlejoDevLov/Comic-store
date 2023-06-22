@@ -1,8 +1,7 @@
 import { useContext, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
-import { allAnimes, getItemById } from "../../helpers";
+import { getItemById } from "../../helpers";
 import { carContext, carListContext, listContext } from "../../states";
-
 
 
 const initialClass = '';
@@ -11,7 +10,7 @@ export const useArticlePage = () => {
 
     const { handleCarList } = useContext(carListContext);
     const { stateCar, dispatchCar } = useContext( carContext );
-    const { setProducts, animeUrl, products } = useContext(listContext);
+    const { animeUrl, initialArray, globalProducts, setGlobalProducts } = useContext(listContext);
 
     const [classCarDiv, setClassCarDiv] = useState('car-counter');
     const [classHelpIcon, setClassHelpIcon] = useState('container-help');
@@ -21,12 +20,11 @@ export const useArticlePage = () => {
     const [counter, setCounter] = useState(0);
 
     const {itemName} = useParams();
-    
-    const item = getItemById(products, itemName, setProducts);
+
+    const item = getItemById( globalProducts, itemName);
 
     const helpIcon = useRef();
     const divGrande = useRef();
-
 
     const totalElementsCar = stateCar.reduce( (prevValue, item) => {
         return prevValue + item.units;
@@ -40,21 +38,23 @@ export const useArticlePage = () => {
         dispatchCar(action);
     }
 
+
     const onSetState = (anime, id) => {
-    setProducts( allAnimes.map( element => {
+    setGlobalProducts( [...globalProducts].map( element => {
         if( element.anime === anime && element.id === id){
         element.cantidad -= 1;
         }
         return element;
     }))
     }
+    
 
     const executeFn = (anime, id) => {
         addArticle();
         onSetState(anime, id)
     }
 
-    const elementsCarousel = allAnimes.filter( element => (
+    const elementsCarousel = globalProducts.filter( element => (
         element.keyWords.includes(item.keyWords[0])
     ));
 

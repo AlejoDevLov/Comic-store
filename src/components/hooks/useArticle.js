@@ -7,16 +7,16 @@ const initialClass = '';
 
 export const useArticle = (element,onSetState) => {
 
+    const { dispatchCar } = useContext(carContext)
     const [classBtn, setClassBtn] = useState(initialClass);
 
     const { url, id, name, precio, anime, cantidad } = element;
 
-    const { dispatchCar } = useContext(carContext)
     
     const addArticle = () => {
         const action = {
-        type: '[TODO] add article',
-        payload: element,
+            type: '[TODO] add article',
+            payload: element,
         }
 
         dispatchCar(action);
@@ -24,7 +24,7 @@ export const useArticle = (element,onSetState) => {
 
     const executeFn = (anime, id) => {
         addArticle();
-        onSetState(anime, id)
+        onSetState(anime, id);
     }
 
     const isAvailable = ( cantidad < 1 );
