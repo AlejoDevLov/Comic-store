@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente App y sus rutas Debe hacer match con el snapshot en HomePage 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="title-div"
+    >
+      <h1
+        class="store-name"
+      >
+        ANIMECO SHOP
+      </h1>
+    </div>
+    <div
+      class="swiper swiper-coverflow swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress mySwiper"
+    >
+      <div
+        class="swiper-wrapper"
+        style="cursor: grab; transition-duration: 0ms; transform: translate3d(NaNpx, 0px, 0px);"
+      >
+        <div
+          class="swiper-slide"
+        >
+          <a
+            href="/shop/los-simpsons"
+          >
+            <img
+              alt="los simpsons"
+              src="/images/los-simpsom/1ca1e142f76931e4350d8a7c0501ec24.jpg"
+            />
+          </a>
+        </div>
+        <div
+          class="swiper-slide"
+        >
+          <a
+            data-testid="demon"
+            href="/shop/demon-slayer"
+          >
+            <img
+              alt="demon-slayer"
+              src="/images/demon/a1fe94673eb48244d0648c63fcaef0d4.jpg"
+            />
+          </a>
+        </div>
+        <div
+          class="swiper-slide"
+        >
+          <a
+            href="/shop/dragon-ball"
+          >
+            <img
+              alt="dragon ball"
+              src="/images/dragon-ball/1a2bcec7310c0abc847cec52b5b65522.jpg"
+            />
+          </a>
+        </div>
+        <div
+          class="swiper-slide"
+        >
+          <a
+            href="/shop/mario"
+          >
+            <img
+              alt="mario"
+              src="/images/mario/faec054c4f79e5d0d4e6b64d17dca593.jpg"
+            />
+          </a>
+        </div>
+        <div
+          class="swiper-slide"
+        >
+          <a
+            href="/shop/sevenDeadly"
+          >
+            <img
+              alt="seven-deadly-sins"
+              src="/images/the-seven-deadly/94d9cc928a2425acf71726c2fdc17d57.jpg"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,10 +1,17 @@
+import { useEffect, useRef } from "react"
 
 
 export const ShowItem = ({ item, executeFn, classBtn }) => {
 
+    const itemCard = useRef();
+
+    useEffect( () => {
+            itemCard.current.scrollIntoView({behavior:'smooth', block: 'end'});
+    },[item]);
+
     return (
-        <div className="container-article-item">
-            <div className="img-article"><img src={item.url} alt={item.name} loading="lazy"/></div>
+        <div className="container-article-item" ref={itemCard}>
+            <div className="img-article" ><img src={item.url} alt={item.name} loading="lazy"/></div>
             <div className="title-article"><h2>{item.name}</h2></div>
             <div className="description-article"><p>{item.descripcion}</p></div>
             {

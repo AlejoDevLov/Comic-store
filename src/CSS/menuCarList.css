@@ -1,6 +1,6 @@
 .container-list{
     width: clamp(200px,40%,350px);
-    background-color: #1E85B8;
+    background-color: #282261;
     position: fixed;
     right: 0;
     top: 70px;

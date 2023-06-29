@@ -91,6 +91,7 @@
     font-size: 18px;
     padding: 20px 10px;
     text-align: center;
+    color: rgb(225, 224, 224);
 }
 
 .talla-article{
@@ -128,7 +129,7 @@
 }
 
 .cantidad-article .color-cantidad{
-    color: rgb(17, 17, 16);
+    color: rgb(249, 249, 248);
 }
 
 .add-to-car{
@@ -268,6 +269,7 @@
 
 .item-carousel h3{
     text-align: center;
+    color: rgb(215, 213, 213);
     /* background-color: aquamarine; */
 }
 
@@ -275,7 +277,7 @@
     width: 3rem;
     height: 3rem;
     margin: 0 1em;
-    color: rgb(168, 169, 231);
+    color: rgb(204, 204, 233);
     filter: drop-shadow(5px 5px 5px black) drop-shadow(-3px -3px 5px white);
     -webkit-filter: drop-shadow(5px 5px 5px black) drop-shadow(-3px -3px 5px white);
 }

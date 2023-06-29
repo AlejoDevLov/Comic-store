@@ -14,7 +14,7 @@ body{
 .container{
   width: 100%;
   min-height: 100vh;
-  min-width: 100vw;
+  /* min-width: 99vw; */
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.455)), url(/images/fondo/Fondo\ pagina\ copia.jpg);
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.455)), url(/images/fondo/Fondo\ pagina\ copia.jpg);
   background-size: cover;

@@ -44,7 +44,7 @@ export default function HomePage() {
           <Link to="../shop/los-simpsons"><img src="/images/los-simpsom/1ca1e142f76931e4350d8a7c0501ec24.jpg" alt="los simpsons" /></Link>
         </SwiperSlide>
         <SwiperSlide >
-          <Link to="../shop/demon-slayer" ><img src="/images/demon/a1fe94673eb48244d0648c63fcaef0d4.jpg" alt="demon-slayer" /></Link>
+          <Link to="../shop/demon-slayer" data-testid="demon"><img src="/images/demon/a1fe94673eb48244d0648c63fcaef0d4.jpg" alt="demon-slayer"/></Link>
         </SwiperSlide>
         <SwiperSlide>
           <Link to="../shop/dragon-ball"><img src="/images/dragon-ball/1a2bcec7310c0abc847cec52b5b65522.jpg" alt="dragon ball" /></Link>

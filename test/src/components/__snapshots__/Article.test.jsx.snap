@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en Article Debe hacer match con el snapshop: Article 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <div
+      class="image"
+    >
+      <a
+        href="/articlePage/4-Camiseta-Vegeta"
+      >
+        <img
+          alt="Dragon ball"
+          loading="lazy"
+          src="/images/dragon-ball/camisetas/4.png"
+        />
+      </a>
+    </div>
+    <div
+      class="title"
+    >
+      <h2>
+        Camiseta Vegeta
+      </h2>
+    </div>
+    <div
+      class="size-container"
+    >
+      <label
+        for="talla"
+      >
+        Talla: 
+      </label>
+      <select
+        data-testid="select"
+        id="talla"
+        name="talla"
+      >
+        <option
+          value=""
+        />
+        <option
+          value="S"
+        >
+          S
+        </option>
+        <option
+          value="M"
+        >
+          M
+        </option>
+      </select>
+    </div>
+    <div
+      class="price"
+    >
+      $50.000
+    </div>
+    <div
+      class="cantidad"
+    >
+      Cantidad disponible: 
+      <span
+        class="color-cantidad"
+      >
+        3
+      </span>
+    </div>
+    <div
+      class="button"
+    >
+      <button
+        class=""
+      >
+        Comprar
+      </button>
+    </div>
+  </div>
+</div>
+`;

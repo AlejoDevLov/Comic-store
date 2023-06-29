@@ -10,7 +10,7 @@ export const useArticlePage = () => {
 
     const { handleCarList } = useContext(carListContext);
     const { stateCar, dispatchCar } = useContext( carContext );
-    const { animeUrl, initialArray, globalProducts, setGlobalProducts } = useContext(listContext);
+    const { animeUrl, globalProducts, setGlobalProducts } = useContext(listContext);
 
     const [classCarDiv, setClassCarDiv] = useState('car-counter');
     const [classHelpIcon, setClassHelpIcon] = useState('container-help');
@@ -48,7 +48,6 @@ export const useArticlePage = () => {
     }))
     }
     
-
     const executeFn = (anime, id) => {
         addArticle();
         onSetState(anime, id)

@@ -7,7 +7,7 @@ export const useShop = () => {
     const { anime } = useParams();
 
     const { setProducts, products, setGlobalProducts, setAnimeUrl, 
-            globalProducts, initialArray, setCurrentAnime } = useContext(listContext);
+            globalProducts, setCurrentAnime } = useContext(listContext);
 
     useEffect( () => {
         setAnimeUrl(anime);
@@ -65,16 +65,10 @@ export const useShop = () => {
             }
             return element;
         })])
-    },[])
+    },[]);
         
-
     return {
-        setGlobalProducts,
         onReduceQuantity,
-        anime,
-        shopItems,
         products,
-        setProducts,
-        initialArray,
     }
 }

@@ -25,6 +25,7 @@ export const useArticle = (element,onSetState) => {
     const executeFn = (anime, id) => {
         addArticle();
         onSetState(anime, id);
+        // console.log('desde test');
     }
 
     const isAvailable = ( cantidad < 1 );

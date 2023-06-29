@@ -5,7 +5,7 @@ export const SizeTShirt = ({ sizes }) => {
     <>
         <div className="size-container">
             <label htmlFor="talla">Talla: </label>
-            <select name="talla" id="talla">
+            <select name="talla" id="talla" data-testid="select" >
                 <option value=''></option>
                 {
                     sizes.map( (size, i) => {
