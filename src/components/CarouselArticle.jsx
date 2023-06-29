@@ -30,6 +30,7 @@ export const CarouselArticle = ({ propsCarousel }) => {
               onMouseDown={setClassIconArrow} 
               onMouseUp={() => (removeClassIconArrow(), translateCarousel())}
               className={classIcon}
+              data-testid="left-arrow"
             >
               <ion-icon name="arrow-back-circle"></ion-icon>
             </div>
@@ -37,6 +38,7 @@ export const CarouselArticle = ({ propsCarousel }) => {
               onMouseDown={setClassIconArrow2} 
               onMouseUp={ () => (removeClassIconArrow2(), translateCarousel())}
               className={classIcon2}
+              data-testid="right-arrow"
             >
               <ion-icon name="arrow-forward-circle"></ion-icon>
             </div>
